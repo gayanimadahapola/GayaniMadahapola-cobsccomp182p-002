@@ -101,7 +101,12 @@
 				0AE92D8723EED3420062E536 /* ViewController.swift */,
 				0AE92D8923EED3420062E536 /* Main.storyboard */,
 				0AE92D8C23EED3430062E536 /* Assets.xcassets */,
+				0AE92DB323EED8C70062E536 /* Controller */,
 				0AE92D8E23EED3430062E536 /* LaunchScreen.storyboard */,
+				0AE92DB423EED8ED0062E536 /* Helpers */,
+				0AE92DB523EED9350062E536 /* Network */,
+				0AE92DB623EED96B0062E536 /* Resources */,
+				0AE92DB723EED9BB0062E536 /* Supportings */,
 				0AE92D9123EED3430062E536 /* Info.plist */,
 			);
 			path = "GayaniMadahapola-cobsccomp182p-002";
@@ -123,6 +128,41 @@
 				0AE92DA723EED3430062E536 /* Info.plist */,
 			);
 			path = "GayaniMadahapola-cobsccomp182p-002UITests";
+			sourceTree = "<group>";
+		};
+		0AE92DB323EED8C70062E536 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0AE92DB423EED8ED0062E536 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0AE92DB523EED9350062E536 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0AE92DB623EED96B0062E536 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AE92DB723EED9BB0062E536 /* Supportings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Supportings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
