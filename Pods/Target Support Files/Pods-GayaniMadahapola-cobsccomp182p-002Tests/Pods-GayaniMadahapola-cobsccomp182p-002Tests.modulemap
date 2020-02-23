@@ -1,0 +1,6 @@
+framework module Pods_GayaniMadahapola_cobsccomp182p_002Tests {
+  umbrella header "Pods-GayaniMadahapola-cobsccomp182p-002Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

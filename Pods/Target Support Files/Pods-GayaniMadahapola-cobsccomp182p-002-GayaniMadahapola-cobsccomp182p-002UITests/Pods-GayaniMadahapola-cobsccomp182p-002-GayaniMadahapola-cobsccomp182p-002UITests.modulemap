@@ -1,0 +1,6 @@
+framework module Pods_GayaniMadahapola_cobsccomp182p_002_GayaniMadahapola_cobsccomp182p_002UITests {
+  umbrella header "Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
