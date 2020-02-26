@@ -3,19 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A9BF17F2402F74C000B8FD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */; };
+		0AC1F3BC24061B1C00FC2C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */; };
+		0AD2A7162406BC4F000D3A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7152406BC4F000D3A92 /* Main.storyboard */; };
+		0AD2A7182406BD11000D3A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */; };
+		0AD2A7192406BF40000D3A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE92D8C23EED3430062E536 /* Assets.xcassets */; };
 		0AE84B3523FE3D1A006525E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE84B3423FE3D1A006525E0 /* LoginViewController.swift */; };
 		0AE84B3723FE3D29006525E0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE84B3623FE3D29006525E0 /* SignUpViewController.swift */; };
 		0AE84B3923FE3D47006525E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE84B3823FE3D47006525E0 /* HomeViewController.swift */; };
 		0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D8523EED3420062E536 /* AppDelegate.swift */; };
 		0AE92D8823EED3420062E536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D8723EED3420062E536 /* ViewController.swift */; };
-		0AE92D8B23EED3420062E536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE92D8923EED3420062E536 /* Main.storyboard */; };
-		0AE92D8D23EED3430062E536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE92D8C23EED3430062E536 /* Assets.xcassets */; };
-		0AE92D9023EED3430062E536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE92D8E23EED3430062E536 /* LaunchScreen.storyboard */; };
 		0AE92D9B23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D9A23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift */; };
 		0AE92DA623EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92DA523EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002UITests.swift */; };
 		456076368E74455F0FB24934 /* Pods_GayaniMadahapola_cobsccomp182p_002Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D703117760412AFB96F34CDB /* Pods_GayaniMadahapola_cobsccomp182p_002Tests.framework */; };
@@ -41,17 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A105E53AB2974DECBA4293A /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		05CFA6D4D7C9F4D33EEB4F0F /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AD2A7152406BC4F000D3A92 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE84B3423FE3D1A006525E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0AE84B3623FE3D29006525E0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0AE84B3823FE3D47006525E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0AE92D8223EED3420062E536 /* GayaniMadahapola-cobsccomp182p-002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GayaniMadahapola-cobsccomp182p-002.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE92D8523EED3420062E536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AE92D8723EED3420062E536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0AE92D8A23EED3420062E536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AE92D8C23EED3430062E536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0AE92D8F23EED3430062E536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE92D9123EED3430062E536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AE92D9623EED3430062E536 /* GayaniMadahapola-cobsccomp182p-002Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GayaniMadahapola-cobsccomp182p-002Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE92D9A23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GayaniMadahapola_cobsccomp182p_002Tests.swift; sourceTree = "<group>"; };
@@ -59,14 +59,14 @@
 		0AE92DA123EED3430062E536 /* GayaniMadahapola-cobsccomp182p-002UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GayaniMadahapola-cobsccomp182p-002UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE92DA523EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GayaniMadahapola_cobsccomp182p_002UITests.swift; sourceTree = "<group>"; };
 		0AE92DA723EED3430062E536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4CDBFDCE549B1B5B057069 /* Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig"; sourceTree = "<group>"; };
 		0E521EC76F5358F9ED3F88AA /* Pods_GayaniMadahapola_cobsccomp182p_002.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GayaniMadahapola_cobsccomp182p_002.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39BD16E7DF3F9C74DA403026 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002Tests/Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		688DBA6EF60E8463D8E399F0 /* Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig"; sourceTree = "<group>"; };
-		73EBE8A85D4149632341A980 /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig"; sourceTree = "<group>"; };
+		1BF00D85456B22B9F80D4C22 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002Tests/Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		50E690BB166B98AB2FC3F1AE /* Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig"; sourceTree = "<group>"; };
+		73BDF462A3635B4B831B6946 /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig"; sourceTree = "<group>"; };
 		7CEE55E7E4E25C85DA0493AC /* Pods_GayaniMadahapola_cobsccomp182p_002_GayaniMadahapola_cobsccomp182p_002UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GayaniMadahapola_cobsccomp182p_002_GayaniMadahapola_cobsccomp182p_002UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D703117760412AFB96F34CDB /* Pods_GayaniMadahapola_cobsccomp182p_002Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GayaniMadahapola_cobsccomp182p_002Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF9A7932AF44CB7053CCA988 /* Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig"; sourceTree = "<group>"; };
-		EFA7F971246C40C4CD507FF5 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002Tests/Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ED9204619C43F008A10146FC /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002Tests/Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 				0AE92D9923EED3430062E536 /* GayaniMadahapola-cobsccomp182p-002Tests */,
 				0AE92DA423EED3430062E536 /* GayaniMadahapola-cobsccomp182p-002UITests */,
 				0AE92D8323EED3420062E536 /* Products */,
-				514691ABC167E1CDDD227CD3 /* Pods */,
 				24686A6892948DA1D2896D32 /* Frameworks */,
+				D24F2EE2532D14515FE63147 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,8 +196,8 @@
 		0AEF807B23EF20D500FA4528 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0AE92D8923EED3420062E536 /* Main.storyboard */,
-				0AE92D8E23EED3430062E536 /* LaunchScreen.storyboard */,
+				0AD2A7152406BC4F000D3A92 /* Main.storyboard */,
+				0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,17 +212,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		514691ABC167E1CDDD227CD3 /* Pods */ = {
+		D24F2EE2532D14515FE63147 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DF9A7932AF44CB7053CCA988 /* Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig */,
-				688DBA6EF60E8463D8E399F0 /* Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig */,
-				0A105E53AB2974DECBA4293A /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */,
-				73EBE8A85D4149632341A980 /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig */,
-				39BD16E7DF3F9C74DA403026 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig */,
-				EFA7F971246C40C4CD507FF5 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig */,
+				50E690BB166B98AB2FC3F1AE /* Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig */,
+				0C4CDBFDCE549B1B5B057069 /* Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig */,
+				05CFA6D4D7C9F4D33EEB4F0F /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */,
+				73BDF462A3635B4B831B6946 /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig */,
+				1BF00D85456B22B9F80D4C22 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig */,
+				ED9204619C43F008A10146FC /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -237,7 +236,7 @@
 				0AE92D7E23EED3420062E536 /* Sources */,
 				0AE92D7F23EED3420062E536 /* Frameworks */,
 				0AE92D8023EED3420062E536 /* Resources */,
-				5FD812FEF25C121B21225DD3 /* [CP] Embed Pods Frameworks */,
+				124A37E5BD68EF430CF377E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,7 +274,7 @@
 				0AE92D9D23EED3430062E536 /* Sources */,
 				0AE92D9E23EED3430062E536 /* Frameworks */,
 				0AE92D9F23EED3430062E536 /* Resources */,
-				338BACBD780FBCCE9EDF812F /* [CP] Embed Pods Frameworks */,
+				DB37E9814048407B32CC4C5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,10 +334,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE92D9023EED3430062E536 /* LaunchScreen.storyboard in Resources */,
-				0A9BF17F2402F74C000B8FD9 /* GoogleService-Info.plist in Resources */,
-				0AE92D8D23EED3430062E536 /* Assets.xcassets in Resources */,
-				0AE92D8B23EED3420062E536 /* Main.storyboard in Resources */,
+				0AD2A7182406BD11000D3A92 /* LaunchScreen.storyboard in Resources */,
+				0AD2A7162406BC4F000D3A92 /* Main.storyboard in Resources */,
+				0AD2A7192406BF40000D3A92 /* Assets.xcassets in Resources */,
+				0AC1F3BC24061B1C00FC2C81 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,21 +358,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		338BACBD780FBCCE9EDF812F /* [CP] Embed Pods Frameworks */ = {
+		124A37E5BD68EF430CF377E3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3C325FE24E5C7E82F42356DD /* [CP] Check Pods Manifest.lock */ = {
@@ -398,21 +397,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5FD812FEF25C121B21225DD3 /* [CP] Embed Pods Frameworks */ = {
+		DB37E9814048407B32CC4C5A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002/Pods-GayaniMadahapola-cobsccomp182p-002-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E10702B2F4203ABB46821C62 /* [CP] Check Pods Manifest.lock */ = {
@@ -505,25 +504,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		0AE92D8923EED3420062E536 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AE92D8A23EED3420062E536 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0AE92D8E23EED3430062E536 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AE92D8F23EED3430062E536 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		0AE92DA823EED3430062E536 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -559,7 +539,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -643,13 +623,13 @@
 		};
 		0AE92DAB23EED3430062E536 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF9A7932AF44CB7053CCA988 /* Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig */;
+			baseConfigurationReference = 50E690BB166B98AB2FC3F1AE /* Pods-GayaniMadahapola-cobsccomp182p-002.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "GayaniMadahapola-cobsccomp182p-002/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GayaniMadahapola-cobsccomp182p-002/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,13 +644,13 @@
 		};
 		0AE92DAC23EED3430062E536 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 688DBA6EF60E8463D8E399F0 /* Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig */;
+			baseConfigurationReference = 0C4CDBFDCE549B1B5B057069 /* Pods-GayaniMadahapola-cobsccomp182p-002.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "GayaniMadahapola-cobsccomp182p-002/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GayaniMadahapola-cobsccomp182p-002/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -685,7 +665,7 @@
 		};
 		0AE92DAE23EED3430062E536 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39BD16E7DF3F9C74DA403026 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig */;
+			baseConfigurationReference = 1BF00D85456B22B9F80D4C22 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -706,7 +686,7 @@
 		};
 		0AE92DAF23EED3430062E536 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFA7F971246C40C4CD507FF5 /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig */;
+			baseConfigurationReference = ED9204619C43F008A10146FC /* Pods-GayaniMadahapola-cobsccomp182p-002Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -727,7 +707,7 @@
 		};
 		0AE92DB123EED3430062E536 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A105E53AB2974DECBA4293A /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */;
+			baseConfigurationReference = 05CFA6D4D7C9F4D33EEB4F0F /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -747,7 +727,7 @@
 		};
 		0AE92DB223EED3430062E536 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73EBE8A85D4149632341A980 /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig */;
+			baseConfigurationReference = 73BDF462A3635B4B831B6946 /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -8,6 +8,8 @@ target 'GayaniMadahapola-cobsccomp182p-002' do
   # Pods for GayaniMadahapola-cobsccomp182p-002
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
+  pod 'Firebase'
+  pod 'Firebase/Firestore'
 
   target 'GayaniMadahapola-cobsccomp182p-002Tests' do
     inherit! :search_paths
@@ -17,7 +19,5 @@ target 'GayaniMadahapola-cobsccomp182p-002' do
   target 'GayaniMadahapola-cobsccomp182p-002UITests' do
     # Pods for testing
   end
-
-  
 
 end
