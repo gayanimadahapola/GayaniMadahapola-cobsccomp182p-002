@@ -13,27 +13,33 @@
         <!--View Controller-->
         <scene sceneID="B3Z-V0-n50">
             <objects>
-                <viewController id="d2g-gI-C1z" sceneMemberID="viewController">
+                <viewController id="d2g-gI-C1z" customClass="ViewController" customModule="GayaniMadahapola_cobsccomp182p_002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cxe-FT-eK6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-qh-Xrg">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-qh-Xrg">
                                 <rect key="frame" x="30" y="184" width="354" height="528"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new logo NIBM" translatesAutoresizingMaskIntoConstraints="NO" id="oCd-sb-MeW">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="378"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="388"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6y2-bs-gh6">
-                                        <rect key="frame" x="0.0" y="403" width="354" height="50"/>
+                                        <rect key="frame" x="0.0" y="408" width="354" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="yFW-kL-3lg"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <segue destination="HUt-8f-6Uu" kind="show" id="vbL-Js-pTs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVp-xa-DUS">
                                         <rect key="frame" x="0.0" y="478" width="354" height="50"/>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <segue destination="tb2-3R-KKl" kind="show" id="wd6-1H-ymT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -51,24 +57,24 @@
                         <viewLayoutGuide key="safeArea" id="4dQ-ZM-wvg"/>
                     </view>
                     <connections>
-                        <segue destination="HUt-8f-6Uu" kind="show" id="seW-Pf-iJR"/>
-                        <segue destination="tb2-3R-KKl" kind="show" id="GKC-4r-O8s"/>
+                        <outlet property="loginButton" destination="TVp-xa-DUS" id="lM8-pL-26S"/>
+                        <outlet property="signUpButton" destination="6y2-bs-gh6" id="n4i-do-UUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3c-u0-Kje" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="87" y="90"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="qpv-Rp-7fL">
             <objects>
-                <viewController id="tb2-3R-KKl" sceneMemberID="viewController">
+                <viewController id="tb2-3R-KKl" customClass="LoginViewController" customModule="GayaniMadahapola_cobsccomp182p_002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NLK-7Y-BFQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-P1-Tlc">
-                                <rect key="frame" x="50" y="164" width="314" height="239"/>
+                                <rect key="frame" x="50" y="164" width="314" height="280.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-Lp-8Hc">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
@@ -88,9 +94,17 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLg-ZS-bUQ">
                                         <rect key="frame" x="0.0" y="140" width="314" height="50"/>
                                         <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="tb2-3R-KKl" eventType="touchUpInside" id="lFD-i5-Oho"/>
+                                            <segue destination="Vny-DN-ID0" kind="show" id="D1O-cd-4hY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5U-Zt-gcn">
+                                        <rect key="frame" x="0.0" y="210" width="314" height="30"/>
+                                        <state key="normal" title="Forgot Password?"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XY8-h2-24j">
-                                        <rect key="frame" x="0.0" y="210" width="314" height="29"/>
+                                        <rect key="frame" x="0.0" y="260" width="314" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -102,7 +116,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-wj-dgU">
-                                <rect key="frame" x="85.5" y="433" width="243" height="30"/>
+                                <rect key="frame" x="85.5" y="754.5" width="243" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wev-Qk-xIh">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="30"/>
@@ -119,24 +133,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2x2-wj-dgU" firstAttribute="centerY" secondItem="NLK-7Y-BFQ" secondAttribute="centerY" id="9yQ-S8-QFf"/>
                             <constraint firstItem="fBr-P1-Tlc" firstAttribute="top" secondItem="2L2-Y5-d8q" secondAttribute="top" constant="120" id="Cbk-Bt-Zfs"/>
-                            <constraint firstItem="2x2-wj-dgU" firstAttribute="top" secondItem="fBr-P1-Tlc" secondAttribute="bottom" constant="30" id="MZ6-kX-tNu"/>
                             <constraint firstItem="2L2-Y5-d8q" firstAttribute="trailing" secondItem="fBr-P1-Tlc" secondAttribute="trailing" constant="50" id="fHB-yD-7Qr"/>
+                            <constraint firstItem="2x2-wj-dgU" firstAttribute="top" secondItem="fBr-P1-Tlc" secondAttribute="bottom" constant="310" id="qIb-Ud-00y"/>
                             <constraint firstItem="fBr-P1-Tlc" firstAttribute="leading" secondItem="2L2-Y5-d8q" secondAttribute="leading" constant="50" id="uiY-m4-OiT"/>
                             <constraint firstItem="2x2-wj-dgU" firstAttribute="centerX" secondItem="NLK-7Y-BFQ" secondAttribute="centerX" id="yev-rM-dnm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2L2-Y5-d8q"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="lW0-Lp-8Hc" id="fPh-Cm-Y2j"/>
+                        <outlet property="errorLable" destination="XY8-h2-24j" id="3K3-Ea-mqo"/>
+                        <outlet property="forgotPasswordField" destination="X5U-Zt-gcn" id="rvl-Tb-5Yr"/>
+                        <outlet property="loginButton" destination="jLg-ZS-bUQ" id="Tkt-3L-Hbh"/>
+                        <outlet property="passwordTextField" destination="LPS-a2-B1D" id="3i3-zR-h51"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVF-nj-hYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1040.5797101449275" y="466.74107142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="UeW-LF-weu">
             <objects>
-                <viewController id="Vny-DN-ID0" sceneMemberID="viewController">
+                <viewController id="Vny-DN-ID0" customClass="HomeViewController" customModule="GayaniMadahapola_cobsccomp182p_002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QRs-9L-XH1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="2065" y="62"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="xhg-dL-K8z">
             <objects>
-                <viewController id="HUt-8f-6Uu" sceneMemberID="viewController">
+                <viewController id="HUt-8f-6Uu" customClass="SignUpViewController" customModule="GayaniMadahapola_cobsccomp182p_002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vBI-Fe-ret">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,6 +214,10 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signUpTapped:" destination="HUt-8f-6Uu" eventType="touchUpInside" id="JD0-n0-rdP"/>
+                                            <segue destination="Vny-DN-ID0" kind="show" id="0Ud-0O-I8i"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkO-aL-cGa">
                                         <rect key="frame" x="0.0" y="325" width="314" height="50"/>
@@ -236,6 +260,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y9B-u4-j7w"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="71v-HV-GfR" id="HAT-tk-AbI"/>
+                        <outlet property="errorLabel" destination="QkO-aL-cGa" id="1dy-nv-lcc"/>
+                        <outlet property="firstNameTextField" destination="fVX-cx-aCi" id="eih-IY-tPi"/>
+                        <outlet property="lastNameTextField" destination="fyC-jn-74U" id="orz-si-T2f"/>
+                        <outlet property="passwordTextField" destination="4Ae-OR-zPm" id="Xxh-7Q-8fB"/>
+                        <outlet property="signUpButton" destination="A2C-bM-eXU" id="OI9-OQ-4XW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaw-zJ-blr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,4 +277,7 @@
     <resources>
         <image name="new logo NIBM" width="300" height="300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="D1O-cd-4hY"/>
+    </inferredMetricsTieBreakers>
 </document>
