@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  FirstApp
+//  GayaniMadahapola-cobsccomp182p-002
 //
 //  Created by Gayani Madubhashini on 2/22/20.
 //  Copyright © 2020 Gayani Madubhashini. All rights reserved.
