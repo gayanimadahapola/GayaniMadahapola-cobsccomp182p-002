@@ -44,6 +44,10 @@ class LoginViewController: UIViewController {
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        //Alert handling---->
+        //        let alert = UIAlertController(title: "Alert", message: "Email or password is not matching!", preferredStyle: .alert)
+        //        let OK = UIAlertAction(title: "OK", style: .default, handler:   nil)
+        //        alert.addAction(OK)
         
         //Sign in in the user
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
