@@ -9,6 +9,15 @@
 import Foundation
 import UIKit
 
+struct Constants {
+    
+    struct Storyboard {
+        
+        static let homeViewController = "HomeVC"
+        
+    }
+}
+
 /* struct Colors {
  
     static let orange = UIColor(red: 255.0/255.0, green: 69.0/255.0, blue: 220.0/255/0, alpha: 1.0)

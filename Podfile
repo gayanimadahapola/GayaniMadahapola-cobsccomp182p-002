@@ -10,6 +10,7 @@ target 'GayaniMadahapola-cobsccomp182p-002' do
   pod 'Firebase/Core'
   pod 'Firebase'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Analytics'
 
   target 'GayaniMadahapola-cobsccomp182p-002Tests' do
     inherit! :search_paths
