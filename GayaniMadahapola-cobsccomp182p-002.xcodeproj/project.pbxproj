@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A106B5B24087F720032EFC5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A106B5A24087F720032EFC5 /* Utilities.swift */; };
+		0A106B5D24088CC00032EFC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A106B5C24088CBF0032EFC5 /* Constants.swift */; };
 		0AC1F3BC24061B1C00FC2C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */; };
 		0AD2A7162406BC4F000D3A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7152406BC4F000D3A92 /* Main.storyboard */; };
 		0AD2A7182406BD11000D3A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		05CFA6D4D7C9F4D33EEB4F0F /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A106B5A24087F720032EFC5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0A106B5C24088CBF0032EFC5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AD2A7152406BC4F000D3A92 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 		0AE92DB423EED8ED0062E536 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0A106B5A24087F720032EFC5 /* Utilities.swift */,
+				0A106B5C24088CBF0032EFC5 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -465,9 +471,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A106B5B24087F720032EFC5 /* Utilities.swift in Sources */,
 				0AE84B3923FE3D47006525E0 /* HomeViewController.swift in Sources */,
 				0AE84B3523FE3D1A006525E0 /* LoginViewController.swift in Sources */,
 				0AE92D8823EED3420062E536 /* ViewController.swift in Sources */,
+				0A106B5D24088CC00032EFC5 /* Constants.swift in Sources */,
 				0AE84B3723FE3D29006525E0 /* SignUpViewController.swift in Sources */,
 				0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */,
 			);

@@ -21,6 +21,21 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        setUpElements()
+        view.setGradiantBackground(colorOne: Utilities.Colors.white , colorTwo: Utilities.Colors.blue)
+    }
+  
+    func setUpElements() {
+        
+        //Hide the error label
+        errorLabel.alpha = 0
+        
+        //Add styles to the elements
+        Utilities.styleTextField(firstNameTextField)
+        Utilities.styleTextField(lastNameTextField)
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleFilledButton(signUpButton)
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
