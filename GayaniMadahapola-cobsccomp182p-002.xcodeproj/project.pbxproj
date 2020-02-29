@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0A106B5B24087F720032EFC5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A106B5A24087F720032EFC5 /* Utilities.swift */; };
 		0A106B5D24088CC00032EFC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A106B5C24088CBF0032EFC5 /* Constants.swift */; };
+		0A3AD329240A47340047CAA9 /* Face ID not recognized.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AD322240A47330047CAA9 /* Face ID not recognized.png */; };
+		0A3AD32A240A47340047CAA9 /* Face ID screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AD323240A47330047CAA9 /* Face ID screen.png */; };
+		0A3AD32B240A47340047CAA9 /* SignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AD324240A47330047CAA9 /* SignUp.png */; };
+		0A3AD32C240A47340047CAA9 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AD325240A47330047CAA9 /* Login.png */; };
+		0A3AD32D240A47340047CAA9 /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AD326240A47340047CAA9 /* Main.png */; };
+		0A3AD32E240A47340047CAA9 /* Allow msg for face ID.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AD327240A47340047CAA9 /* Allow msg for face ID.png */; };
+		0A3AD32F240A47340047CAA9 /* Inavalid password Error.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AD328240A47340047CAA9 /* Inavalid password Error.png */; };
 		0AC1F3BC24061B1C00FC2C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */; };
 		0AD2A7162406BC4F000D3A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7152406BC4F000D3A92 /* Main.storyboard */; };
 		0AD2A7182406BD11000D3A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */; };
@@ -46,6 +53,13 @@
 		05CFA6D4D7C9F4D33EEB4F0F /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0A106B5A24087F720032EFC5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0A106B5C24088CBF0032EFC5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0A3AD322240A47330047CAA9 /* Face ID not recognized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Face ID not recognized.png"; sourceTree = "<group>"; };
+		0A3AD323240A47330047CAA9 /* Face ID screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Face ID screen.png"; sourceTree = "<group>"; };
+		0A3AD324240A47330047CAA9 /* SignUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUp.png; sourceTree = "<group>"; };
+		0A3AD325240A47330047CAA9 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		0A3AD326240A47340047CAA9 /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
+		0A3AD327240A47340047CAA9 /* Allow msg for face ID.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Allow msg for face ID.png"; sourceTree = "<group>"; };
+		0A3AD328240A47340047CAA9 /* Inavalid password Error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inavalid password Error.png"; sourceTree = "<group>"; };
 		0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AD2A7152406BC4F000D3A92 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,6 +115,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3AD321240A46E80047CAA9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0A3AD327240A47340047CAA9 /* Allow msg for face ID.png */,
+				0A3AD322240A47330047CAA9 /* Face ID not recognized.png */,
+				0A3AD323240A47330047CAA9 /* Face ID screen.png */,
+				0A3AD328240A47340047CAA9 /* Inavalid password Error.png */,
+				0A3AD325240A47330047CAA9 /* Login.png */,
+				0A3AD326240A47340047CAA9 /* Main.png */,
+				0A3AD324240A47330047CAA9 /* SignUp.png */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		0AE92D7923EED3420062E536 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +164,7 @@
 				0AE92DB723EED9BB0062E536 /* Supportings */,
 				0AE92D9123EED3430062E536 /* Info.plist */,
 				0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */,
+				0A3AD321240A46E80047CAA9 /* Screens */,
 			);
 			path = "GayaniMadahapola-cobsccomp182p-002";
 			sourceTree = "<group>";
@@ -340,9 +369,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3AD32D240A47340047CAA9 /* Main.png in Resources */,
 				0AD2A7182406BD11000D3A92 /* LaunchScreen.storyboard in Resources */,
+				0A3AD32F240A47340047CAA9 /* Inavalid password Error.png in Resources */,
+				0A3AD32A240A47340047CAA9 /* Face ID screen.png in Resources */,
+				0A3AD32E240A47340047CAA9 /* Allow msg for face ID.png in Resources */,
 				0AD2A7162406BC4F000D3A92 /* Main.storyboard in Resources */,
+				0A3AD329240A47340047CAA9 /* Face ID not recognized.png in Resources */,
 				0AD2A7192406BF40000D3A92 /* Assets.xcassets in Resources */,
+				0A3AD32C240A47340047CAA9 /* Login.png in Resources */,
+				0A3AD32B240A47340047CAA9 /* SignUp.png in Resources */,
 				0AC1F3BC24061B1C00FC2C81 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
