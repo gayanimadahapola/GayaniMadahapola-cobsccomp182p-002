@@ -38,6 +38,11 @@ class LoginViewController: UIViewController {
         Utilities.styleFilledButton(loginButton)
     }
     
+    
+    @IBAction func forgotPasswordTapped(_ sender: Any) {
+        
+    }
+    
     @IBAction func loginTapped(_ sender: Any) {
         
         //create cleaned verdion of the textfields

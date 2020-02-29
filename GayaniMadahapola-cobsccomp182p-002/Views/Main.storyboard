@@ -19,15 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-qh-Xrg">
-                                <rect key="frame" x="30" y="208" width="315" height="396"/>
+                                <rect key="frame" x="30" y="186" width="315" height="440"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new logo NIBM" translatesAutoresizingMaskIntoConstraints="NO" id="oCd-sb-MeW">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="256"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lH-le-FzX">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="290"/>
+                                        <state key="normal" image="new logo NIBM"/>
+                                        <connections>
+                                            <action selector="TouchIDButton:" destination="d2g-gI-C1z" eventType="touchUpInside" id="dAr-bm-dEa"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6y2-bs-gh6">
-                                        <rect key="frame" x="0.0" y="276" width="315" height="50"/>
+                                        <rect key="frame" x="0.0" y="310" width="315" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="yFW-kL-3lg"/>
+                                            <constraint firstAttribute="height" constant="55" id="yFW-kL-3lg"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
@@ -35,7 +39,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVp-xa-DUS">
-                                        <rect key="frame" x="0.0" y="346" width="315" height="50"/>
+                                        <rect key="frame" x="0.0" y="385" width="315" height="55"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <segue destination="tb2-3R-KKl" kind="show" id="wd6-1H-ymT"/>
@@ -50,8 +54,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Lle-qh-Xrg" firstAttribute="leading" secondItem="4dQ-ZM-wvg" secondAttribute="leading" constant="30" id="AA0-E8-CDA"/>
+                            <constraint firstItem="Lle-qh-Xrg" firstAttribute="top" secondItem="Cxe-FT-eK6" secondAttribute="topMargin" constant="98" id="FGU-ef-dlR"/>
                             <constraint firstItem="Lle-qh-Xrg" firstAttribute="centerY" secondItem="Cxe-FT-eK6" secondAttribute="centerY" id="Hss-HC-Y8y"/>
-                            <constraint firstItem="Lle-qh-Xrg" firstAttribute="top" secondItem="4dQ-ZM-wvg" secondAttribute="top" constant="120" id="wcw-vK-Yus"/>
                             <constraint firstItem="4dQ-ZM-wvg" firstAttribute="trailing" secondItem="Lle-qh-Xrg" secondAttribute="trailing" constant="30" id="zmm-S2-PDs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4dQ-ZM-wvg"/>
@@ -75,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-P1-Tlc">
-                                <rect key="frame" x="50" y="163.99999999999997" width="275" height="280.33333333333326"/>
+                                <rect key="frame" x="50" y="207.99999999999997" width="275" height="280.33333333333326"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email " textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-Lp-8Hc">
                                         <rect key="frame" x="0.0" y="0.0" width="275" height="50"/>
@@ -102,6 +106,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5U-Zt-gcn">
                                         <rect key="frame" x="0.0" y="210" width="275" height="30"/>
                                         <state key="normal" title="Forgot Password?"/>
+                                        <connections>
+                                            <action selector="forgotPasswordTapped:" destination="tb2-3R-KKl" eventType="touchUpInside" id="til-xy-a17"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XY8-h2-24j">
                                         <rect key="frame" x="0.0" y="260" width="275" height="20.333333333333314"/>
@@ -116,7 +123,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-wj-dgU">
-                                <rect key="frame" x="66" y="624.33333333333337" width="243" height="30"/>
+                                <rect key="frame" x="66" y="668.33333333333337" width="243" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wev-Qk-xIh">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="30"/>
@@ -181,7 +188,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hdX-9T-C7R">
-                                <rect key="frame" x="50" y="94" width="275" height="400"/>
+                                <rect key="frame" x="50" y="138" width="275" height="400"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fVX-cx-aCi">
                                         <rect key="frame" x="0.0" y="0.0" width="275" height="50"/>
@@ -237,16 +244,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-Zo-IFb">
-                                <rect key="frame" x="61" y="514" width="253" height="189"/>
+                                <rect key="frame" x="61" y="558" width="253" height="145"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ej-Q6-AzA">
-                                        <rect key="frame" x="0.0" y="0.0" width="196" height="189"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="145"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4m-TL-IHl">
-                                        <rect key="frame" x="206" y="0.0" width="47" height="189"/>
+                                        <rect key="frame" x="206" y="0.0" width="47" height="145"/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
                                             <segue destination="tb2-3R-KKl" kind="show" id="Ft3-Io-FE5"/>
@@ -306,8 +313,8 @@
         <image name="new logo NIBM" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mIO-dK-bTW"/>
+        <segue reference="vbL-Js-pTs"/>
         <segue reference="g1a-UL-lFh"/>
-        <segue reference="Ft3-Io-FE5"/>
+        <segue reference="wd6-1H-ymT"/>
     </inferredMetricsTieBreakers>
 </document>
