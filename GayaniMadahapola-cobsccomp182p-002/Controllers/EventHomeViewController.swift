@@ -7,12 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class EventHomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
     
     var eventName = ["Walk To Sustain" , "Workshop & Public Awareness" , "HOLA '20 | NIBM Open Day" , "NIBM Design Show 2019" , "Youth Rave 2019" , "Free Seminar on Data Science in Real Life" ,"Fashion Design Workshop" , "Blood Donation Camp" , "DJ Party And Stunt Show" , "Cyberfest 2018"]
-    
-    //let eventImage: [UIImage] = []
     
     var eventImage = [UIImage(named: "walkTo"), UIImage(named: "workshopPublicAwareness"), UIImage(named: "Hola"), UIImage(named: "DesignShow"), UIImage(named: "YouthRave"), UIImage(named: "FreeSeminaDataScience"), UIImage(named: "FashionDesigner"), UIImage(named: "BloodDonation"), UIImage(named: "DJParty"), UIImage(named: "CyberFest")]
     
@@ -29,6 +28,11 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let db = Firestore.firestore()
+        
+        //Add a document
+        db.collection("Event").addDocument(data: ["eventName": "Walk To Sustain", "date": "29th February 2020 Sat 2.30 PM", "location": "NIBM, Colombo 09"])
         
         // following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem;
