@@ -28,6 +28,9 @@
 		0AE84B3923FE3D47006525E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE84B3823FE3D47006525E0 /* HomeViewController.swift */; };
 		0AE8AF99240BD0D50066D233 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AF98240BD0D50066D233 /* CreateEventViewController.swift */; };
 		0AE8AF9B240BD0F20066D233 /* PublisherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AF9A240BD0F20066D233 /* PublisherProfileViewController.swift */; };
+		0AE8AF9D240C00B80066D233 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AF9C240C00B80066D233 /* MyProfileViewController.swift */; };
+		0AE8AF9F240C03DF0066D233 /* EditMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */; };
+		0AE8AFA1240C0A600066D233 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */; };
 		0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D8523EED3420062E536 /* AppDelegate.swift */; };
 		0AE92D8823EED3420062E536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D8723EED3420062E536 /* ViewController.swift */; };
 		0AE92D9B23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D9A23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift */; };
@@ -76,6 +79,9 @@
 		0AE84B3823FE3D47006525E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0AE8AF98240BD0D50066D233 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		0AE8AF9A240BD0F20066D233 /* PublisherProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherProfileViewController.swift; sourceTree = "<group>"; };
+		0AE8AF9C240C00B80066D233 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMyProfileViewController.swift; sourceTree = "<group>"; };
+		0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		0AE92D8223EED3420062E536 /* GayaniMadahapola-cobsccomp182p-002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GayaniMadahapola-cobsccomp182p-002.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE92D8523EED3420062E536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AE92D8723EED3420062E536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +223,9 @@
 				0A3AD358240B56980047CAA9 /* EventTimelineCell.swift */,
 				0AE8AF98240BD0D50066D233 /* CreateEventViewController.swift */,
 				0AE8AF9A240BD0F20066D233 /* PublisherProfileViewController.swift */,
+				0AE8AF9C240C00B80066D233 /* MyProfileViewController.swift */,
+				0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */,
+				0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -530,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE8AF9D240C00B80066D233 /* MyProfileViewController.swift in Sources */,
 				0A106B5B24087F720032EFC5 /* Utilities.swift in Sources */,
 				0AE84B3923FE3D47006525E0 /* HomeViewController.swift in Sources */,
 				0A3AD34E240A85F70047CAA9 /* EventHomeViewController.swift in Sources */,
@@ -539,6 +549,8 @@
 				0AE92D8823EED3420062E536 /* ViewController.swift in Sources */,
 				0AE8AF99240BD0D50066D233 /* CreateEventViewController.swift in Sources */,
 				0A106B5D24088CC00032EFC5 /* Constants.swift in Sources */,
+				0AE8AF9F240C03DF0066D233 /* EditMyProfileViewController.swift in Sources */,
+				0AE8AFA1240C0A600066D233 /* ForgotPasswordViewController.swift in Sources */,
 				0AE8AF9B240BD0F20066D233 /* PublisherProfileViewController.swift in Sources */,
 				0AE84B3723FE3D29006525E0 /* SignUpViewController.swift in Sources */,
 				0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */,

@@ -25,6 +25,12 @@ class EventDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //back button
+        self.navigationController?.navigationBar.backItem?.title = "back"
+        // or
+//        navigationItem.backBarButtonItem = UIBarButtonItem(
+//            title: "Something Else", style: .plain, target: nil, action: nil)
 
         // Do any additional setup after loading the view.
         setUpElements()
