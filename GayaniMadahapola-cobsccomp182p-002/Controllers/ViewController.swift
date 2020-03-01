@@ -43,6 +43,9 @@ class ViewController: UIViewController {
                 if wasCorrect
                 {
                     print("Correct!")
+                    //navigate to Event home by using face ID
+                    self.navigateToEventHomeViewController()
+                    
                 }else{
                     print("Incorrect!")
                 }
@@ -54,6 +57,22 @@ class ViewController: UIViewController {
         }
         
     }
+    /*
+    func transitionToHome() {
+        let eventHomeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.EventHomeViewController) as? EventHomeViewController
+        
+        view.window?.rootViewController = eventHomeViewController
+        view.window?.makeKeyAndVisible()
+    } */
     
+    //navigate to Event home by using face ID
+    func navigateToEventHomeViewController() {
+        
+        let secondVC = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.EventHomeViewController) as! EventHomeViewController
+        self.navigationController?.pushViewController(secondVC, animated: true)
+        
+    }
 }
+    
+
 

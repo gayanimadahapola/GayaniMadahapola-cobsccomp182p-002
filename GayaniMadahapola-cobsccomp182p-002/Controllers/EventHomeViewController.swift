@@ -22,11 +22,21 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
         // Do any additional setup after loading the view.
         //Background color style
         view.setGradiantBackground(colorOne: Utilities.Colors.white , colorTwo: Utilities.Colors.blue)
     }
+    
+    //set height for cells
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 290
+    }
+    
+    //set numbers of cell rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return eventName.count
     }
@@ -34,7 +44,7 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? EventTimelineCell
         cell?.eventNameLabel.text = eventName[indexPath.row]
-        cell?.eventImage.image = UIImage(named: "DarkLogo")
+        cell?.eventImage.image = UIImage(named: "FashionDesigner")
         //cell?.eventImage.image = UIImage(named: eventName[indexPath.row])
         return cell!
     }
