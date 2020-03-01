@@ -58,6 +58,7 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
         //cell?.infoLabel.text = info[indexPath.row]
         //cell?.eventImage.image = UIImage(named: "FashionDesigner")
         //cell?.eventImage.image = UIImage(named: eventName[indexPath.row])
+        
         return cell!
     }
     //select cell row and navigate to event detail page
@@ -66,18 +67,3 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
-
-/*
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return eventName.count}
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? EventTimelineCell
-        cell?.eventNameLabel.text = eventName[indexPath.row]
-        cell?.eventImage.image = UIImage(named: "DarkLogo")
-        //cell?.eventImage.image = UIImage(named: eventName[indexPath.row])
-        return cell!
-    }
-}
- */

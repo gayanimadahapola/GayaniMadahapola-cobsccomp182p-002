@@ -220,7 +220,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FashionDesigner" translatesAutoresizingMaskIntoConstraints="NO" id="WQg-i0-TS0">
-                                                    <rect key="frame" x="5" y="0.0" width="404" height="175.00000000000011"/>
+                                                    <rect key="frame" x="5" y="0.0" width="404" height="175"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="175" id="fb7-tA-OQm"/>
                                                     </constraints>
@@ -300,7 +300,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FashionDesigner" translatesAutoresizingMaskIntoConstraints="NO" id="nAE-Kd-wDW">
-                                <rect key="frame" x="10" y="108" width="394" height="200.00000000000011"/>
+                                <rect key="frame" x="10" y="108" width="394" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="394" id="WFF-aC-6sU"/>
                                     <constraint firstAttribute="height" constant="200" id="WHx-If-p6w"/>
@@ -891,6 +891,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUg-HO-yGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5726" y="865"/>
+        </scene>
+        <!--Network Manager-->
+        <scene sceneID="7gV-Xc-qPa">
+            <objects>
+                <viewController id="hZj-tE-AvT" customClass="NetworkManager" customModule="GayaniMadahapola_cobsccomp182p_002" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cW-qu-2aU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OrL-GI-r89">
+                                <rect key="frame" x="10" y="229" width="394" height="324"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5MM-DB-0Er">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="128"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPw-7J-acP">
+                                        <rect key="frame" x="0.0" y="158" width="394" height="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No internet connection found. Check your connection" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjK-t5-UdC">
+                                        <rect key="frame" x="0.0" y="211" width="394" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcu-MF-B9m">
+                                        <rect key="frame" x="0.0" y="284" width="394" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NsM-vb-Pkj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Try again"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OrL-GI-r89" firstAttribute="leading" secondItem="rdk-AK-Igj" secondAttribute="leading" constant="10" id="0ms-Mq-PkE"/>
+                            <constraint firstItem="rdk-AK-Igj" firstAttribute="bottom" secondItem="OrL-GI-r89" secondAttribute="bottom" constant="309" id="7gB-iv-qFk"/>
+                            <constraint firstItem="rdk-AK-Igj" firstAttribute="trailing" secondItem="OrL-GI-r89" secondAttribute="trailing" constant="10" id="854-AV-f8G"/>
+                            <constraint firstItem="OrL-GI-r89" firstAttribute="top" secondItem="rdk-AK-Igj" secondAttribute="top" constant="185" id="A1N-Eu-qRX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rdk-AK-Igj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKz-hB-JfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="-646"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="xhg-dL-K8z">
