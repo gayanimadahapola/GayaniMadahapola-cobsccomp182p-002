@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         }
         else
         {
-            //alert it doesnt support touch ID
+            //alert it doesn't support touch ID
         }
         
     }

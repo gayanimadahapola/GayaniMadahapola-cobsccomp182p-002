@@ -13,18 +13,11 @@ struct Constants {
     
     struct Storyboard {
         
-        static let homeViewController = "HomeVC"
+        static let EventHomeViewController = "HomeVC"
         
     }
 }
 
-/* struct Colors {
- 
-    static let orange = UIColor(red: 255.0/255.0, green: 69.0/255.0, blue: 220.0/255/0, alpha: 1.0)
-    static let blue = UIColor(red: 153.0/255.0, green: 204.0/255.0, blue: 255.0/255/0, alpha: 1.0)
-    static let green = UIColor(red: 91.0/255.0, green: 197.0/255.0, blue: 159.0/255/0, alpha: 1.0)
-    static let white = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255/0, alpha: 1.0)
-} */
 
 extension UIView {
     

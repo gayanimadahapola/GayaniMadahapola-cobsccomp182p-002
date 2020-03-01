@@ -64,9 +64,9 @@ class LoginViewController: UIViewController {
             }
             else{
                 
-                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
+                let eventHomeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.EventHomeViewController) as? EventHomeViewController
                 
-                self.view.window?.rootViewController = homeViewController
+                self.view.window?.rootViewController = eventHomeViewController
                 self.view.window?.makeKeyAndVisible()
             }
         }
