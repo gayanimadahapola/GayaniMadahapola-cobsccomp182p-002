@@ -135,6 +135,13 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		0A3AD35A240B72D20047CAA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0AE92D7923EED3420062E536 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +169,7 @@
 			children = (
 				0AE92D8C23EED3430062E536 /* Assets.xcassets */,
 				0AE92D8523EED3420062E536 /* AppDelegate.swift */,
+				0A3AD35A240B72D20047CAA9 /* Model */,
 				0AEF807B23EF20D500FA4528 /* Views */,
 				0AE92DB323EED8C70062E536 /* Controllers */,
 				0AE92DB423EED8ED0062E536 /* Helpers */,

@@ -157,7 +157,7 @@
                         <outlet property="forgotPasswordField" destination="X5U-Zt-gcn" id="rvl-Tb-5Yr"/>
                         <outlet property="loginButton" destination="jLg-ZS-bUQ" id="Tkt-3L-Hbh"/>
                         <outlet property="passwordTextField" destination="LPS-a2-B1D" id="3i3-zR-h51"/>
-                        <segue destination="hij-fl-JQK" kind="show" id="hIC-Ur-p4H"/>
+                        <segue destination="hij-fl-JQK" kind="show" identifier="LoginToMain" id="hIC-Ur-p4H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVF-nj-hYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -290,7 +290,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="HuA-jI-s33" id="aHo-Ig-nX5"/>
-                        <segue destination="45G-89-GsJ" kind="show" id="yfH-G9-r32"/>
+                        <segue destination="45G-89-GsJ" kind="show" identifier="MainToCreate" id="yfH-G9-r32"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtv-Lk-A5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -543,7 +543,7 @@
                         <outlet property="lastNameTextField" destination="fyC-jn-74U" id="orz-si-T2f"/>
                         <outlet property="passwordTextField" destination="4Ae-OR-zPm" id="Xxh-7Q-8fB"/>
                         <outlet property="signUpButton" destination="A2C-bM-eXU" id="OI9-OQ-4XW"/>
-                        <segue destination="hij-fl-JQK" kind="show" id="8em-Kk-Quy"/>
+                        <segue destination="hij-fl-JQK" kind="show" identifier="SignIntoMain" id="8em-Kk-Quy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaw-zJ-blr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -620,7 +620,7 @@
         <image name="new logo NIBM" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8em-Kk-Quy"/>
+        <segue reference="hIC-Ur-p4H"/>
         <segue reference="vbL-Js-pTs"/>
         <segue reference="wd6-1H-ymT"/>
     </inferredMetricsTieBreakers>
