@@ -10,9 +10,8 @@ import UIKit
 
 class EventTimelineCell: UITableViewCell {
     
-    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var avatarBtn: UIButton!
     @IBOutlet weak var eventNameLabel: UILabel!
-    @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var DateTimeLabel: UILabel!
     @IBOutlet weak var eventImage: UIImageView!

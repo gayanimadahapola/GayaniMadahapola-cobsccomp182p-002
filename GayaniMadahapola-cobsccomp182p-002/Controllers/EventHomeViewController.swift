@@ -12,11 +12,18 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     
     var eventName = ["Walk To Sustain" , "Workshop & Public Awareness" , "HOLA '20 | NIBM Open Day" , "NIBM Design Show 2019" , "Youth Rave 2019" , "Free Seminar on Data Science in Real Life" ,"Fashion Design Workshop" , "Blood Donation Camp" , "DJ Party And Stunt Show" , "Cyberfest 2018"]
     
-//        var eventImage = []
-//        var publisherAvatar = []
-//        var date = []
-//        var location = []
-//        var info = []
+    //let eventImage: [UIImage] = []
+    
+    var eventImage = [UIImage(named: "walkTo"), UIImage(named: "workshopPublicAwareness"), UIImage(named: "Hola"), UIImage(named: "DesignShow"), UIImage(named: "YouthRave"), UIImage(named: "FreeSeminaDataScience"), UIImage(named: "FashionDesigner"), UIImage(named: "BloodDonation"), UIImage(named: "DJParty"), UIImage(named: "CyberFest")]
+    
+    var publisherAvatar = [UIImage(named: "girl96")]
+    
+    var date = ["29th February 2020 Sat 2.30 PM", "23th February 2020 Sun 9.00 AM", "19th January 2020 Sat 10.00 AM","12th September 2019 Thr 10.00 AM", "08th September 2019 Sun 10.30 AM", "15th February 2020 Sat 2.00 PM", "18th May 2019 Fri 5.00 PM", "25th April 2019 Wed 9.00 AM", "31th Auguest 2019 3.30 PM", "08th September 2019 Sat 9.00 AM"]
+    
+    var location = ["NIBM, Colombo 09"]
+    
+    var info = ["Free Seminar on Data Science in Real Life - for school leavers, university students and for those who are interested in Data Science."]
+    
     
     @IBOutlet weak var myTableView: UITableView!
     
@@ -44,7 +51,12 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? EventTimelineCell
         cell?.eventNameLabel.text = eventName[indexPath.row]
-        cell?.eventImage.image = UIImage(named: "FashionDesigner")
+        cell?.eventImage.image = eventImage[indexPath.row]
+        //cell?.avatar.image = publisherAvatar[indexPath.row]
+        //cell?.DateTimeLabel.text = date[indexPath.row]
+        //cell?.locationLabel.text = location[indexPath.row]
+        //cell?.infoLabel.text = info[indexPath.row]
+        //cell?.eventImage.image = UIImage(named: "FashionDesigner")
         //cell?.eventImage.image = UIImage(named: eventName[indexPath.row])
         return cell!
     }
