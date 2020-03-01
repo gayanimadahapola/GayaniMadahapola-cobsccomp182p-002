@@ -23,7 +23,7 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
         // Do any additional setup after loading the view.
@@ -33,7 +33,7 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     
     //set height for cells
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 290
+        return 310
     }
     
     //set numbers of cell rows
@@ -48,15 +48,18 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
         //cell?.eventImage.image = UIImage(named: eventName[indexPath.row])
         return cell!
     }
+    //select cell row and navigate to event detail page
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let  vc = storyboard?.instantiateViewController(withIdentifier: "EventDetailViewController") as? EventDetailViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
 }
 
 /*
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return eventName.count
-    }
-    
+        return eventName.count}
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? EventTimelineCell
         cell?.eventNameLabel.text = eventName[indexPath.row]
@@ -64,6 +67,5 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         //cell?.eventImage.image = UIImage(named: eventName[indexPath.row])
         return cell!
     }
-    
 }
  */

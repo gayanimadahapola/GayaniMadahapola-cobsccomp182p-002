@@ -21,12 +21,18 @@ class EventTimelineCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setUpElements()
+    self.setGradiantBackground(colorOne: Utilities.Colors.white , colorTwo: Utilities.Colors.blue)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func setUpElements() {
+        //added button styles
+        Utilities.styleFilledButton(goingButton)
     }
 
     @IBAction func goingTapped(_ sender: Any) {
