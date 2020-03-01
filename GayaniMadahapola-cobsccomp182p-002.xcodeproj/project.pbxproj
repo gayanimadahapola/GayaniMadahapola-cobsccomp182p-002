@@ -32,6 +32,8 @@
 		0AE8AF9F240C03DF0066D233 /* EditMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */; };
 		0AE8AFA1240C0A600066D233 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */; };
 		0AE8AFA3240C17720066D233 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA2240C17720066D233 /* NetworkManager.swift */; };
+		0AE8AFA5240C2F110066D233 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA4240C2F110066D233 /* Login.swift */; };
+		0AE8AFA7240C2F6B0066D233 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA6240C2F6B0066D233 /* LoginViewController.swift */; };
 		0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D8523EED3420062E536 /* AppDelegate.swift */; };
 		0AE92D8823EED3420062E536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D8723EED3420062E536 /* ViewController.swift */; };
 		0AE92D9B23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D9A23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift */; };
@@ -84,6 +86,8 @@
 		0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMyProfileViewController.swift; sourceTree = "<group>"; };
 		0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		0AE8AFA2240C17720066D233 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0AE8AFA4240C2F110066D233 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		0AE8AFA6240C2F6B0066D233 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0AE92D8223EED3420062E536 /* GayaniMadahapola-cobsccomp182p-002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GayaniMadahapola-cobsccomp182p-002.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE92D8523EED3420062E536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AE92D8723EED3420062E536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 		0AE92DA423EED3430062E536 /* GayaniMadahapola-cobsccomp182p-002UITests */ = {
 			isa = PBXGroup;
 			children = (
+				0AE8AFA6240C2F6B0066D233 /* LoginViewController.swift */,
+				0AE8AFA4240C2F110066D233 /* Login.swift */,
 				0AE92DA523EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002UITests.swift */,
 				0AE92DA723EED3430062E536 /* Info.plist */,
 			);
@@ -573,7 +579,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE8AFA7240C2F6B0066D233 /* LoginViewController.swift in Sources */,
 				0AE92DA623EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002UITests.swift in Sources */,
+				0AE8AFA5240C2F110066D233 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
