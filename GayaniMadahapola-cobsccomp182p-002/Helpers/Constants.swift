@@ -14,11 +14,8 @@ struct Constants {
     struct Storyboard {
         
         static let EventHomeViewController = "HomeVC"
-        
     }
 }
-
-
 extension UIView {
     
     func setGradiantBackground(colorOne: UIColor, colorTwo: UIColor) {

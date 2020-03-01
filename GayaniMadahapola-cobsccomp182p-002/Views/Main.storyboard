@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fBr-P1-Tlc">
-                                <rect key="frame" x="50" y="164" width="314" height="280.5"/>
+                                <rect key="frame" x="50" y="208" width="314" height="280.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email " textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lW0-Lp-8Hc">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
@@ -123,7 +123,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-wj-dgU">
-                                <rect key="frame" x="85.5" y="624.5" width="243" height="30"/>
+                                <rect key="frame" x="85.5" y="668.5" width="243" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wev-Qk-xIh">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="30"/>
@@ -176,7 +176,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="270" id="I3g-3Z-bgK" customClass="EventTimeline" customModule="GayaniMadahapola_cobsccomp182p_002" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="270" id="I3g-3Z-bgK" customClass="EventTimelineCell" customModule="GayaniMadahapola_cobsccomp182p_002" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="270"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I3g-3Z-bgK" id="RBL-yl-X3l">
@@ -190,16 +190,18 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="G0b-t8-QRA">
                                                             <rect key="frame" x="0.0" y="0.0" width="94.5" height="239"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JEP-tG-eVQ">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girl96" translatesAutoresizingMaskIntoConstraints="NO" id="JEP-tG-eVQ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="50" id="Nhf-ut-jKZ"/>
+                                                                        <constraint firstAttribute="height" constant="50" id="gdq-I1-Cdu"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="sKu-ZZ-tU9"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="GnC-IC-a2L">
                                                                     <rect key="frame" x="0.0" y="55" width="94.5" height="184"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-hI-VGm">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibg-hI-VGm">
                                                                             <rect key="frame" x="0.0" y="0.0" width="92.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -231,8 +233,8 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-Yt-dya">
                                                             <rect key="frame" x="145.5" y="0.0" width="200" height="208"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQg-i0-TS0">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="135"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FashionDesigner" translatesAutoresizingMaskIntoConstraints="NO" id="WQg-i0-TS0">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="135.00000000000011"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="135" id="Rc6-9r-fVP"/>
                                                                         <constraint firstAttribute="width" constant="200" id="cyS-AG-jAR"/>
@@ -245,6 +247,9 @@
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <state key="normal" title="Going"/>
+                                                                    <connections>
+                                                                        <action selector="goingTapped:" destination="I3g-3Z-bgK" eventType="touchUpInside" id="QVM-iy-i27"/>
+                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -253,10 +258,13 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="DateLabel" destination="XaU-hm-mhi" id="cQI-IB-uYu"/>
-                                            <outlet property="DescriptionLabel" destination="RWp-HR-AO5" id="P8S-zn-EcC"/>
-                                            <outlet property="EventNameLabel" destination="Ibg-hI-VGm" id="Swe-RY-aUe"/>
-                                            <outlet property="LocationLabel" destination="xsS-Z0-FHx" id="EhW-7c-AtY"/>
+                                            <outlet property="DateTimeLabel" destination="XaU-hm-mhi" id="V3j-h8-B1Q"/>
+                                            <outlet property="avatar" destination="JEP-tG-eVQ" id="qEZ-E5-eeM"/>
+                                            <outlet property="eventImage" destination="WQg-i0-TS0" id="1DS-eI-UdJ"/>
+                                            <outlet property="eventNameLabel" destination="Ibg-hI-VGm" id="FJs-Fg-ei9"/>
+                                            <outlet property="goingButton" destination="woL-iR-03S" id="VfK-1U-R1z"/>
+                                            <outlet property="infoLabel" destination="RWp-HR-AO5" id="skS-fg-LG6"/>
+                                            <outlet property="locationLabel" destination="xsS-Z0-FHx" id="bJR-N3-Pvv"/>
                                             <segue destination="niz-Mi-k26" kind="show" id="5ZJ-K8-sbG"/>
                                         </connections>
                                     </tableViewCell>
@@ -282,6 +290,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="HuA-jI-s33" id="aHo-Ig-nX5"/>
+                        <segue destination="45G-89-GsJ" kind="show" id="yfH-G9-r32"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtv-Lk-A5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -407,7 +416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Smh-tx-vfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3201" y="820"/>
+            <point key="canvasLocation" x="3200" y="865"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="isa-4L-KiD">
@@ -431,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQo-4V-TEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4055" y="820"/>
+            <point key="canvasLocation" x="4054" y="865"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="xhg-dL-K8z">
@@ -442,7 +451,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hdX-9T-C7R">
-                                <rect key="frame" x="50" y="94" width="314" height="400"/>
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fVX-cx-aCi">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
@@ -498,16 +507,16 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-Zo-IFb">
-                                <rect key="frame" x="80.5" y="514" width="253" height="273"/>
+                                <rect key="frame" x="80.5" y="558" width="253" height="229"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ej-Q6-AzA">
-                                        <rect key="frame" x="0.0" y="0.0" width="196" height="273"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="229"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4m-TL-IHl">
-                                        <rect key="frame" x="206" y="0.0" width="47" height="273"/>
+                                        <rect key="frame" x="206" y="0.0" width="47" height="229"/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
                                             <segue destination="tb2-3R-KKl" kind="show" id="Ft3-Io-FE5"/>
@@ -591,6 +600,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="13D-c0-xYe"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ihp-9r-iVh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -605,11 +615,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="FashionDesigner" width="741" height="417"/>
+        <image name="girl96" width="96" height="96"/>
         <image name="new logo NIBM" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8em-Kk-Quy"/>
-        <segue reference="mIO-dK-bTW"/>
-        <segue reference="Ft3-Io-FE5"/>
+        <segue reference="vbL-Js-pTs"/>
+        <segue reference="wd6-1H-ymT"/>
     </inferredMetricsTieBreakers>
 </document>

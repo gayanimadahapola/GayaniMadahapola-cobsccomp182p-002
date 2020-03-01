@@ -8,8 +8,16 @@
 
 import UIKit
 
-class EventTimeline: UITableViewCell {
-
+class EventTimelineCell: UITableViewCell {
+    
+    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var DateTimeLabel: UILabel!
+    @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var goingButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +29,6 @@ class EventTimeline: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func goingTapped(_ sender: Any) {
+    }
 }
