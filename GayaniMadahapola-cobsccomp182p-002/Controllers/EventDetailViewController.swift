@@ -39,6 +39,7 @@ class EventDetailViewController: UIViewController {
     func setUpElements() {
         //added button styles
         Utilities.styleFilledButton(goingBtn)
+        Utilities.styleHollowButton(postButton)
     }
     @IBAction func goingBtnTapped(_ sender: Any) {
     }
