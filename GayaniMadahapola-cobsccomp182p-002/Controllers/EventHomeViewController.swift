@@ -23,6 +23,9 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     
     var info = ["Free Seminar on Data Science in Real Life - for school leavers, university students and for those who are interested in Data Science."]
     
+    @IBAction func AddEventBtn(_ sender: Any) {
+        
+    }
     
     @IBOutlet weak var myTableView: UITableView!
     
