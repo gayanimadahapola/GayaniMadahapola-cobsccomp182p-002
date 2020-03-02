@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0688CD240CD324000DD3C5 /* FindLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0688CC240CD324000DD3C5 /* FindLocationViewController.swift */; };
+		0A0688D1240CF294000DD3C5 /* SignUpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0688D0240CF294000DD3C5 /* SignUpTest.swift */; };
+		0A0688D3240CF533000DD3C5 /* TestUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0688D2240CF533000DD3C5 /* TestUser.swift */; };
+		0A0688D9240CFD65000DD3C5 /* userLoginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0688D8240CFD65000DD3C5 /* userLoginTest.swift */; };
+		0A0688DD240D05D1000DD3C5 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0688DC240D05D1000DD3C5 /* NewUser.swift */; };
+		0A0688DF240D05FB000DD3C5 /* NewUserSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0688DE240D05FB000DD3C5 /* NewUserSignUp.swift */; };
 		0A106B5B24087F720032EFC5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A106B5A24087F720032EFC5 /* Utilities.swift */; };
 		0A106B5D24088CC00032EFC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A106B5C24088CBF0032EFC5 /* Constants.swift */; };
 		0A3AD329240A47340047CAA9 /* Face ID not recognized.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A3AD322240A47330047CAA9 /* Face ID not recognized.png */; };
@@ -32,8 +38,6 @@
 		0AE8AF9F240C03DF0066D233 /* EditMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */; };
 		0AE8AFA1240C0A600066D233 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */; };
 		0AE8AFA3240C17720066D233 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA2240C17720066D233 /* NetworkManager.swift */; };
-		0AE8AFA5240C2F110066D233 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA4240C2F110066D233 /* Login.swift */; };
-		0AE8AFA7240C2F6B0066D233 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8AFA6240C2F6B0066D233 /* LoginViewController.swift */; };
 		0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D8523EED3420062E536 /* AppDelegate.swift */; };
 		0AE92D8823EED3420062E536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D8723EED3420062E536 /* ViewController.swift */; };
 		0AE92D9B23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE92D9A23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift */; };
@@ -62,6 +66,12 @@
 
 /* Begin PBXFileReference section */
 		05CFA6D4D7C9F4D33EEB4F0F /* Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; path = "Target Support Files/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests/Pods-GayaniMadahapola-cobsccomp182p-002-GayaniMadahapola-cobsccomp182p-002UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A0688CC240CD324000DD3C5 /* FindLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindLocationViewController.swift; sourceTree = "<group>"; };
+		0A0688D0240CF294000DD3C5 /* SignUpTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTest.swift; sourceTree = "<group>"; };
+		0A0688D2240CF533000DD3C5 /* TestUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUser.swift; sourceTree = "<group>"; };
+		0A0688D8240CFD65000DD3C5 /* userLoginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLoginTest.swift; sourceTree = "<group>"; };
+		0A0688DC240D05D1000DD3C5 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
+		0A0688DE240D05FB000DD3C5 /* NewUserSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserSignUp.swift; sourceTree = "<group>"; };
 		0A106B5A24087F720032EFC5 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0A106B5C24088CBF0032EFC5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0A3AD322240A47330047CAA9 /* Face ID not recognized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Face ID not recognized.png"; sourceTree = "<group>"; };
@@ -86,8 +96,6 @@
 		0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMyProfileViewController.swift; sourceTree = "<group>"; };
 		0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		0AE8AFA2240C17720066D233 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		0AE8AFA4240C2F110066D233 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		0AE8AFA6240C2F6B0066D233 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0AE92D8223EED3420062E536 /* GayaniMadahapola-cobsccomp182p-002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GayaniMadahapola-cobsccomp182p-002.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE92D8523EED3420062E536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AE92D8723EED3420062E536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,10 +199,10 @@
 				0AE92DB423EED8ED0062E536 /* Helpers */,
 				0AE92DB523EED9350062E536 /* Network */,
 				0AE92DB623EED96B0062E536 /* Resources */,
+				0A3AD321240A46E80047CAA9 /* Screens */,
 				0AE92DB723EED9BB0062E536 /* Supportings */,
 				0AE92D9123EED3430062E536 /* Info.plist */,
 				0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */,
-				0A3AD321240A46E80047CAA9 /* Screens */,
 			);
 			path = "GayaniMadahapola-cobsccomp182p-002";
 			sourceTree = "<group>";
@@ -202,6 +210,9 @@
 		0AE92D9923EED3430062E536 /* GayaniMadahapola-cobsccomp182p-002Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0A0688DC240D05D1000DD3C5 /* NewUser.swift */,
+				0A0688D2240CF533000DD3C5 /* TestUser.swift */,
+				0A0688D0240CF294000DD3C5 /* SignUpTest.swift */,
 				0AE92D9A23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift */,
 				0AE92D9C23EED3430062E536 /* Info.plist */,
 			);
@@ -211,8 +222,8 @@
 		0AE92DA423EED3430062E536 /* GayaniMadahapola-cobsccomp182p-002UITests */ = {
 			isa = PBXGroup;
 			children = (
-				0AE8AFA6240C2F6B0066D233 /* LoginViewController.swift */,
-				0AE8AFA4240C2F110066D233 /* Login.swift */,
+				0A0688DE240D05FB000DD3C5 /* NewUserSignUp.swift */,
+				0A0688D8240CFD65000DD3C5 /* userLoginTest.swift */,
 				0AE92DA523EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002UITests.swift */,
 				0AE92DA723EED3430062E536 /* Info.plist */,
 			);
@@ -234,6 +245,7 @@
 				0AE8AF9C240C00B80066D233 /* MyProfileViewController.swift */,
 				0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */,
 				0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */,
+				0A0688CC240CD324000DD3C5 /* FindLocationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -563,6 +575,7 @@
 				0AE8AFA1240C0A600066D233 /* ForgotPasswordViewController.swift in Sources */,
 				0AE8AF9B240BD0F20066D233 /* PublisherProfileViewController.swift in Sources */,
 				0AE84B3723FE3D29006525E0 /* SignUpViewController.swift in Sources */,
+				0A0688CD240CD324000DD3C5 /* FindLocationViewController.swift in Sources */,
 				0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,6 +585,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AE92D9B23EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002Tests.swift in Sources */,
+				0A0688DD240D05D1000DD3C5 /* NewUser.swift in Sources */,
+				0A0688D1240CF294000DD3C5 /* SignUpTest.swift in Sources */,
+				0A0688D3240CF533000DD3C5 /* TestUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,9 +595,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE8AFA7240C2F6B0066D233 /* LoginViewController.swift in Sources */,
+				0A0688D9240CFD65000DD3C5 /* userLoginTest.swift in Sources */,
+				0A0688DF240D05FB000DD3C5 /* NewUserSignUp.swift in Sources */,
 				0AE92DA623EED3430062E536 /* GayaniMadahapola_cobsccomp182p_002UITests.swift in Sources */,
-				0AE8AFA5240C2F110066D233 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

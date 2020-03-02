@@ -1,14 +1,14 @@
 //
-//  GayaniMadahapola_cobsccomp182p_002UITests.swift
+//  userLoginTest.swift
 //  GayaniMadahapola-cobsccomp182p-002UITests
 //
-//  Created by Gayani Madubhashini on 2/8/20.
+//  Created by Gayani Madubhashini on 3/2/20.
 //  Copyright © 2020 Gayani Madubhashini. All rights reserved.
 //
 
 import XCTest
 
-class GayaniMadahapola_cobsccomp182p_002UITests: XCTestCase {
+class userLoginTest: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,11 +26,18 @@ class GayaniMadahapola_cobsccomp182p_002UITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    
     func testExample() {
-        //Face ID test to login -> event home will appear
-        XCUIApplication().otherElements.containing(.navigationBar, identifier:"GayaniMadahapola_cobsccomp182p_002.View").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .button).element(boundBy: 0).tap()
-        XCUIDevice.shared.orientation = .portrait
-        XCUIDevice.shared.orientation = .portrait
+        
+        let app = XCUIApplication()
+        let loginButton = app.buttons["Login"]
+        loginButton.tap()
+        app.textFields["Email "].tap()
+        
+        let passwordSecureTextField = app.secureTextFields["Password"]
+        passwordSecureTextField.tap()
+        passwordSecureTextField.tap()
+        loginButton.tap()
         
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

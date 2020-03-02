@@ -1,14 +1,14 @@
 //
-//  Login.swift
-//  GayaniMadahapola-cobsccomp182p-002UITests
+//  NewUser.swift
+//  GayaniMadahapola-cobsccomp182p-002Tests
 //
-//  Created by Gayani Madubhashini on 3/1/20.
+//  Created by Gayani Madubhashini on 3/2/20.
 //  Copyright © 2020 Gayani Madubhashini. All rights reserved.
 //
 
 import XCTest
 
-class Login: XCTestCase {
+class NewUser: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
