@@ -29,6 +29,11 @@
 		0AD2A7162406BC4F000D3A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7152406BC4F000D3A92 /* Main.storyboard */; };
 		0AD2A7182406BD11000D3A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */; };
 		0AD2A7192406BF40000D3A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE92D8C23EED3430062E536 /* Assets.xcassets */; };
+		0AD8C201240D478F0092C61B /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C200240D478F0092C61B /* FirebaseClient.swift */; };
+		0AD8C203240D48410092C61B /* EventDataServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C202240D48410092C61B /* EventDataServiceClient.swift */; };
+		0AD8C205240D48770092C61B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C204240D48770092C61B /* Event.swift */; };
+		0AD8C207240D53AB0092C61B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C206240D53AB0092C61B /* Profile.swift */; };
+		0AD8C209240D54F80092C61B /* ProfileDataServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8C208240D54F80092C61B /* ProfileDataServiceClient.swift */; };
 		0AE84B3523FE3D1A006525E0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE84B3423FE3D1A006525E0 /* LoginViewController.swift */; };
 		0AE84B3723FE3D29006525E0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE84B3623FE3D29006525E0 /* SignUpViewController.swift */; };
 		0AE84B3923FE3D47006525E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE84B3823FE3D47006525E0 /* HomeViewController.swift */; };
@@ -87,6 +92,11 @@
 		0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AD2A7152406BC4F000D3A92 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AD8C200240D478F0092C61B /* FirebaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
+		0AD8C202240D48410092C61B /* EventDataServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDataServiceClient.swift; sourceTree = "<group>"; };
+		0AD8C204240D48770092C61B /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0AD8C206240D53AB0092C61B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		0AD8C208240D54F80092C61B /* ProfileDataServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataServiceClient.swift; sourceTree = "<group>"; };
 		0AE84B3423FE3D1A006525E0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0AE84B3623FE3D29006525E0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		0AE84B3823FE3D47006525E0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -162,8 +172,20 @@
 		0A3AD35A240B72D20047CAA9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0AD8C204240D48770092C61B /* Event.swift */,
+				0AD8C206240D53AB0092C61B /* Profile.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0AD8C1FF240D47760092C61B /* NetworkClients */ = {
+			isa = PBXGroup;
+			children = (
+				0AD8C200240D478F0092C61B /* FirebaseClient.swift */,
+				0AD8C202240D48410092C61B /* EventDataServiceClient.swift */,
+				0AD8C208240D54F80092C61B /* ProfileDataServiceClient.swift */,
+			);
+			path = NetworkClients;
 			sourceTree = "<group>";
 		};
 		0AE92D7923EED3420062E536 = {
@@ -191,6 +213,7 @@
 		0AE92D8423EED3420062E536 /* GayaniMadahapola-cobsccomp182p-002 */ = {
 			isa = PBXGroup;
 			children = (
+				0AD8C1FF240D47760092C61B /* NetworkClients */,
 				0AE92D8C23EED3430062E536 /* Assets.xcassets */,
 				0AE92D8523EED3420062E536 /* AppDelegate.swift */,
 				0A3AD35A240B72D20047CAA9 /* Model */,
@@ -562,17 +585,22 @@
 			files = (
 				0AE8AF9D240C00B80066D233 /* MyProfileViewController.swift in Sources */,
 				0A106B5B24087F720032EFC5 /* Utilities.swift in Sources */,
+				0AD8C209240D54F80092C61B /* ProfileDataServiceClient.swift in Sources */,
 				0AE84B3923FE3D47006525E0 /* HomeViewController.swift in Sources */,
 				0A3AD34E240A85F70047CAA9 /* EventHomeViewController.swift in Sources */,
+				0AD8C205240D48770092C61B /* Event.swift in Sources */,
 				0AE8AFA3240C17720066D233 /* NetworkManager.swift in Sources */,
+				0AD8C201240D478F0092C61B /* FirebaseClient.swift in Sources */,
 				0A3AD359240B56980047CAA9 /* EventTimelineCell.swift in Sources */,
 				0A3AD357240B4E1C0047CAA9 /* EventDetailViewController.swift in Sources */,
 				0AE84B3523FE3D1A006525E0 /* LoginViewController.swift in Sources */,
+				0AD8C207240D53AB0092C61B /* Profile.swift in Sources */,
 				0AE92D8823EED3420062E536 /* ViewController.swift in Sources */,
 				0AE8AF99240BD0D50066D233 /* CreateEventViewController.swift in Sources */,
 				0A106B5D24088CC00032EFC5 /* Constants.swift in Sources */,
 				0AE8AF9F240C03DF0066D233 /* EditMyProfileViewController.swift in Sources */,
 				0AE8AFA1240C0A600066D233 /* ForgotPasswordViewController.swift in Sources */,
+				0AD8C203240D48410092C61B /* EventDataServiceClient.swift in Sources */,
 				0AE8AF9B240BD0F20066D233 /* PublisherProfileViewController.swift in Sources */,
 				0AE84B3723FE3D29006525E0 /* SignUpViewController.swift in Sources */,
 				0A0688CD240CD324000DD3C5 /* FindLocationViewController.swift in Sources */,

@@ -64,7 +64,6 @@ class SignUpViewController: UIViewController {
             return"Password must have atleast 8 characters, contains a special character and a number. "
         }
         
-        
         return nil
     }
     

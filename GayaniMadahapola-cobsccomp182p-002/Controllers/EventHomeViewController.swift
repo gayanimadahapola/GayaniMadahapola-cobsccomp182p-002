@@ -34,6 +34,10 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
         
         let db = Firestore.firestore()
         
+        EventDataServiceClient.getAllEvents { events in
+            
+            print(events)
+        }
         //Add a document
         db.collection("Event").addDocument(data: ["eventName": "Walk To Sustain", "date": "29th February 2020 Sat 2.30 PM", "location": "NIBM, Colombo 09"])
         
