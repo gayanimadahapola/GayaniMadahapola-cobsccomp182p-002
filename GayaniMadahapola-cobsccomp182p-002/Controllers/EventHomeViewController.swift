@@ -51,7 +51,7 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
     
     //set height for cells
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 310
+        return 380
     }
     
     //set numbers of cell rows

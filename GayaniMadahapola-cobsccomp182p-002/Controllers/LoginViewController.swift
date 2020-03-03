@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UIWebViewDelegate {
     
     var gradientLayer: CAGradientLayer!
 
@@ -41,9 +41,42 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotPasswordTapped(_ sender: Any) {
         
+        let forgotPasswordAlert = UIAlertController(title: "Forgot password?", message: "Enter your logged email ID", preferredStyle: .alert)
+        forgotPasswordAlert.addTextField { (textField) in
+            textField.placeholder = "Enter email address"
+        }
+        
+        forgotPasswordAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        forgotPasswordAlert.addAction(UIAlertAction(title: "Reset Password", style: .default, handler: { (action) in
+            
+            let resetEmail = forgotPasswordAlert.textFields?.first?.text
+            
+            Auth.auth().sendPasswordReset(withEmail: resetEmail!, completion: { (error) in
+                
+                //to avoid unwxpected behaviour
+                DispatchQueue.main.async {
+                    //Use of "if let" to access the error, if it is non-nil
+                if let error = error{
+                    
+                    let resetFailedAlert = UIAlertController(title: "Reset Failed", message: error.localizedDescription, preferredStyle: .alert)
+                    resetFailedAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(resetFailedAlert, animated: true, completion: nil)
+                }
+                else {
+                    let resetEmailSentAlert = UIAlertController(title: "Reset email sent successfully", message: "Check your email", preferredStyle: .alert)
+                    resetEmailSentAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(resetEmailSentAlert, animated: true, completion: nil)
+                    }
+                }
+                })
+            }))
+
+        //Show alert
+        self.present(forgotPasswordAlert, animated: true, completion: nil)
     }
     
-    @IBAction func loginTapped(_ sender: Any) {
+    
+   @IBAction func loginTapped(_ sender: Any) {
         
         //create cleaned verdion of the textfields
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -71,6 +104,6 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-
 }
+
+

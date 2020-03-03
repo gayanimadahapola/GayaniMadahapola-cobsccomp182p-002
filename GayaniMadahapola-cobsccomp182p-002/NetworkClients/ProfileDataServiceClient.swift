@@ -28,8 +28,8 @@ class ProfileDataServiceClient{
             "p_name":profile.myName,
             "p_email":profile.myEmail,
             "p_contactNo":profile.myContactNo,
-            "p_FBURL":profile.myFBURL,
-           // "p_image": profile.myImage
+            "p_FBURL":profile.myFBURL
+            //"p_image": profile.myImage
             ]).addSnapshotListener { (DocumentSnapshot
                 , Error) in
         }

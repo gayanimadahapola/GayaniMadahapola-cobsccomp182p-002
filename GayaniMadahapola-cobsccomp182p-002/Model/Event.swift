@@ -20,6 +20,7 @@ class Event {
         self.eventName = ename
         self.eventImage = eI
         self.eventLocation = eLocation
+        self.eventDateTime = eventDate
         self.eventDesc = eDesc
     }
 }

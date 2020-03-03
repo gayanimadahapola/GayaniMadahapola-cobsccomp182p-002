@@ -10,9 +10,10 @@ import UIKit
 
 class EventTimelineCell: UITableViewCell {
     
-    @IBOutlet weak var avatarBtn: UIButton!
+  
+    @IBOutlet weak var avatarImgView: UIImageView!
     @IBOutlet weak var eventNameLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var locationBtn: UIButton!
     @IBOutlet weak var DateTimeLabel: UILabel!
     @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var goingButton: UIButton!
@@ -33,7 +34,14 @@ class EventTimelineCell: UITableViewCell {
         //added button styles
         Utilities.styleFilledButton(goingButton)
     }
-
     @IBAction func goingTapped(_ sender: Any) {
+        
     }
+    @IBAction func likeTapped(_ sender: Any) {
+        
+    }
+    @IBAction func commentTapped(_ sender: Any) {
+        
+    }
+    
 }

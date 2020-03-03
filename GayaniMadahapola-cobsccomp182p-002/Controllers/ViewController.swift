@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         Utilities.styleHollowButton(loginButton)
     }
     
-    
+    // Touch ID & Face ID integration is here - when you touch the nibm event logo
     @IBAction func TouchIDButton(_ sender: Any) {
         
         //call Touch ID or Face ID
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
                 if wasCorrect
                 {
                     print("Correct!")
-                    //navigate to Event home by using face ID
+                    //navigate to Event home by using face ID/Touch ID
                     self.navigateToEventHomeViewController()
                     
                 }else{
@@ -57,13 +57,19 @@ class ViewController: UIViewController {
         }
         
     }
-    /*
-    func transitionToHome() {
-        let eventHomeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.EventHomeViewController) as? EventHomeViewController
+    
+    @IBAction func SignUpBtnTapped(_ sender: Any) {
+    
         
-        view.window?.rootViewController = eventHomeViewController
-        view.window?.makeKeyAndVisible()
-    } */
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUp") as! SignUpViewController
+//        self.navigationController?.pushViewController(vc, animated: true)
+//
+        
+    }
+    
+    @IBAction func LoginBtnTapped(_ sender: Any) {
+        
+    }
     
     //navigate to Event home by using face ID
     func navigateToEventHomeViewController() {

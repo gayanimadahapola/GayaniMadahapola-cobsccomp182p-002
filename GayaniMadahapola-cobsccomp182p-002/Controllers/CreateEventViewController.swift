@@ -21,6 +21,7 @@ class CreateEventViewController: UIViewController {
     @IBOutlet weak var timeTf: UITextField!
     @IBOutlet weak var infoLbl: UILabel!
     @IBOutlet weak var infoTf: UITextField!
+    @IBOutlet weak var addPhotoImage: UIImageView!
     
     
     override func viewDidLoad() {
@@ -44,6 +45,10 @@ class CreateEventViewController: UIViewController {
         datePickerView.datePickerMode = UIDatePicker.Mode.date
         dateTf.inputView = datePickerView
         //datePickerView.addTarget(self, action: //#selector(CreateEventViewController.datePickerValueChanged), for: UIControl.Event.valueChanged)
+        
+    }
+    
+    @IBAction func addPhotosTapped(_ sender: Any) {
         
     }
     @IBAction func discardBtnTapped(_ sender: Any) {

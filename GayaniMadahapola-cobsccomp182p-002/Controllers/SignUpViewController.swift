@@ -25,6 +25,7 @@ class SignUpViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         setUpElements()
+        //Add Styles - background
         view.setGradiantBackground(colorOne: Utilities.Colors.white , colorTwo: Utilities.Colors.blue)
     }
   
@@ -56,9 +57,9 @@ class SignUpViewController: UIViewController {
         }
         
         //check if the password is incorrect
-        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let NewPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        if Utilities.isPasswordValid(cleanedPassword) == false {
+        if Utilities.isPasswordValid(NewPassword) == false {
             
             //password isnt secure enough
             return"Password must have atleast 8 characters, contains a special character and a number. "
@@ -77,7 +78,7 @@ class SignUpViewController: UIViewController {
             showError(error!)
         }
         else{
-            //create cleaned version of the data
+            //create the data
             let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -94,7 +95,7 @@ class SignUpViewController: UIViewController {
                     //user was created successfully, now store the firstname and lastname
                     let db  = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname" : firstName, "lastName":lastName, "uid" : result!.user.uid]) {
+                    db.collection("users").addDocument(data: ["firstname" : firstName, "lastName":lastName, "email":email , "password":password ,"uid" : result!.user.uid]) {
                         (error) in
                         
                         if error != nil {

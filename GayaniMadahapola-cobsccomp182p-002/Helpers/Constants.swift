@@ -14,6 +14,7 @@ struct Constants {
     struct Storyboard {
         
         static let EventHomeViewController = "HomeVC"
+        static let SignUpViewController = "SignUp"
     }
 }
 extension UIView {

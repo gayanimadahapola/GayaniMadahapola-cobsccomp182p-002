@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+
+//check network status
+
 class NetworkManager: UIViewController {
     
     override func viewDidLoad() {
