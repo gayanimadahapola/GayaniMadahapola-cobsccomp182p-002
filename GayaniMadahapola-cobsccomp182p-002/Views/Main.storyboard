@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="juq-lG-vdM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HyA-Ee-a9O">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -309,7 +309,7 @@
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <action selector="AddEventBtn:" destination="Vny-DN-ID0" id="Zqt-Bd-5Cs"/>
-                                                <segue destination="45G-89-GsJ" kind="show" id="zBh-nX-CDp"/>
+                                                <segue destination="45G-89-GsJ" kind="show" identifier="homeToCreateEvent" id="zBh-nX-CDp"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -453,7 +453,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Event Detail" leftItemsSupplementBackButton="YES" id="vOn-yR-RGv">
-                                        <barButtonItem key="backBarButtonItem" title="back" id="1dM-XJ-3cB"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="VoJ-eX-INT">
+                                            <connections>
+                                                <action selector="HomeBtn:" destination="niz-Mi-k26" id="WcK-Kp-lh3"/>
+                                                <segue destination="Vny-DN-ID0" kind="show" identifier="Home" id="grY-TK-zJ0"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -879,10 +884,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eH-6Z-fVl">
-                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Location" leftItemsSupplementBackButton="YES" id="7gY-AE-rE3">
                                         <barButtonItem key="backBarButtonItem" title="back" id="t06-y0-gYr"/>
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="rGc-oD-l3t">
+                                            <connections>
+                                                <action selector="backBtn:" destination="zLc-k6-jCX" id="CHL-Pb-Yrx"/>
+                                                <segue destination="45G-89-GsJ" kind="show" identifier="createEvent" id="2m1-KZ-UlA"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="E9q-Lt-ZOs">
                                             <connections>
                                                 <action selector="searchBtn:" destination="zLc-k6-jCX" id="fpf-FL-cRl"/>
@@ -892,7 +903,7 @@
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yu9-By-kEz">
-                                <rect key="frame" x="0.0" y="132" width="414" height="730"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <connections>
                                     <outlet property="delegate" destination="zLc-k6-jCX" id="z5z-PZ-3ds"/>
                                 </connections>
@@ -927,31 +938,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrf-oC-fuY">
-                                <rect key="frame" x="20" y="100" width="374" height="21.5"/>
+                                <rect key="frame" x="20" y="56" width="374" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of event" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="00k-if-pqa">
-                                <rect key="frame" x="20" y="128.5" width="374" height="30"/>
+                                <rect key="frame" x="20" y="84.5" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hp-Sv-CF8">
-                                <rect key="frame" x="20" y="165.5" width="374" height="21.5"/>
+                                <rect key="frame" x="20" y="121.5" width="374" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiN-oy-yEU">
-                                <rect key="frame" x="20" y="254" width="374" height="21.5"/>
+                                <rect key="frame" x="20" y="210" width="374" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10th February 2020" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8UN-62-fQk">
-                                <rect key="frame" x="20" y="282.5" width="374" height="30"/>
+                                <rect key="frame" x="20" y="238.5" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1038,13 +1049,13 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your location" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="c5t-rF-Tk8">
-                                <rect key="frame" x="20" y="206" width="263" height="30"/>
+                                <rect key="frame" x="20" y="162" width="263" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxF-EJ-BEz">
-                                <rect key="frame" x="330" y="178" width="64" height="73"/>
+                                <rect key="frame" x="330" y="134" width="64" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="5F1-qR-p2F"/>
                                 </constraints>
@@ -1179,6 +1190,10 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0p-mD-uBn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1193,6 +1208,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mHZ-tp-JXL"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUg-HO-yGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1381,6 +1398,7 @@
         <!--Home-->
         <scene sceneID="FgB-yd-0qz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHe-iQ-NJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hij-fl-JQK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="th7-QC-r9t"/>
                     <toolbarItems/>
@@ -1396,7 +1414,6 @@
                         <segue destination="HyA-Ee-a9O" kind="relationship" relationship="rootViewController" id="S7V-Gu-Wqe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tHe-iQ-NJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3201" y="90"/>
         </scene>
@@ -1601,8 +1618,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="8em-Kk-Quy"/>
         <segue reference="vbL-Js-pTs"/>
-        <segue reference="yfH-G9-r32"/>
-        <segue reference="M8M-1X-HE0"/>
-        <segue reference="fvX-ix-6Yg"/>
+        <segue reference="2m1-KZ-UlA"/>
+        <segue reference="4Mw-CZ-tct"/>
+        <segue reference="B4R-iY-VLh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -37,9 +37,12 @@ class MyProfileViewController: UIViewController {
     }
     @IBAction func MyEventListBtnTapped(_ sender: Any) {
         
+        
     }
     @IBAction func LogOutBtnTapped(_ sender: Any) {
         
+        self.makeLogOutAlert()
+        
     }
-    
 }
+

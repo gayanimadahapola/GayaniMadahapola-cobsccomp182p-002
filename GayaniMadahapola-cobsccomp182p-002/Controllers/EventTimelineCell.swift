@@ -36,6 +36,8 @@ class EventTimelineCell: UITableViewCell {
     }
     @IBAction func goingTapped(_ sender: Any) {
         
+      //SharedClass.SharedInstance.alert(view: self, title: "Give Feedback", message: "If you are interested..")
+        
     }
     @IBAction func likeTapped(_ sender: Any) {
         

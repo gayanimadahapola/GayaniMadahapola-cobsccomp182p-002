@@ -22,15 +22,15 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var commentField: UITextField!
     @IBOutlet weak var postButton: UIButton!
     
+    @IBAction func HomeBtn(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Home") as! EventDetailViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //back button
-        self.navigationController?.navigationBar.backItem?.title = "back"
-        // or
-//        navigationItem.backBarButtonItem = UIBarButtonItem(
-//            title: "Something Else", style: .plain, target: nil, action: nil)
 
         // Do any additional setup after loading the view.
         setUpElements()

@@ -12,6 +12,14 @@ import MapKit
 class FindLocationViewController: UIViewController, UISearchBarDelegate{
     
     @IBOutlet weak var myMapView: MKMapView!
+    @IBAction func backBtn(_ sender: Any) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "createEvent") as! CreateEventViewController
+        self.present(vc, animated: true, completion: nil)
+
+        
+    }
     @IBAction func searchBtn(_ sender: Any) {
         let  serachController = UISearchController(searchResultsController: nil)
         serachController.searchBar.delegate = self
@@ -87,7 +95,17 @@ class FindLocationViewController: UIViewController, UISearchBarDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //back button
+        //self.navigationController?.navigationBar.backItem?.title = "back"
+        //navigationItem.backBarButtonItem = UIBarButtonItem(
+            //title: "back", style: .plain, target: nil, action: nil)
 
         // Do any additional setup after loading the view.
+        let backButton = UIBarButtonItem()
+        
+        backButton.title = "back"
+        
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
     }
 }

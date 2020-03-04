@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import MobileCoreServices
 
 class CreateEventViewController: UIViewController {
 
@@ -48,7 +50,16 @@ class CreateEventViewController: UIViewController {
         
     }
     
+    
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+        
+    }
+    
     @IBAction func addPhotosTapped(_ sender: Any) {
+        
+       
         
     }
     @IBAction func discardBtnTapped(_ sender: Any) {
@@ -56,6 +67,9 @@ class CreateEventViewController: UIViewController {
         
     }
     @IBAction func createEventBtnTapped(_ sender: Any) {
+        
+        self.transition(identifier: "homeToCreateEvent")
+        
         let event = Event(ename: eventNameTf.text!, eI: "", eLocation: locationTf.text!, eventDate: "2019-01-30", eDesc: "1234")
 
         EventDataServiceClient.saveEvent(event: event)
@@ -94,6 +108,12 @@ class CreateEventViewController: UIViewController {
     func cancelDatePicker(){
         //cancel button dismiss datepicker dialog
         self.view.endEditing(true)
+    }
+    
+    private func transition(identifier: String) {
+        DispatchQueue.main.async {
+            TransitionManager.sharedInstance.transitionSegue(sender: self, identifier: identifier)
+        }
     }
 }
 
