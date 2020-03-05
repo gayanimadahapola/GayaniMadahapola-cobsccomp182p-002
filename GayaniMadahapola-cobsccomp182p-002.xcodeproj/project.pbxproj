@@ -27,6 +27,8 @@
 		0A3AD359240B56980047CAA9 /* EventTimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3AD358240B56980047CAA9 /* EventTimelineCell.swift */; };
 		0A3C8C8F240EB97300176FDA /* MyEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C8C8E240EB97300176FDA /* MyEventTableViewController.swift */; };
 		0A3C8C91240EE83400176FDA /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C8C90240EE83400176FDA /* SignUp.swift */; };
+		0A6BC6532410B4B40025DD66 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BC6522410B4B40025DD66 /* TabBarViewController.swift */; };
+		0A6BC6552410B6660025DD66 /* SearchEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6BC6542410B6660025DD66 /* SearchEventViewController.swift */; };
 		0A7393B0240F398700FB2003 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393AF240F398700FB2003 /* Reviews.swift */; };
 		0A7393B2240F3DD600FB2003 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393B1240F3DD600FB2003 /* TransitionManager.swift */; };
 		0A7393B4240F4C9B00FB2003 /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393B3240F4C9B00FB2003 /* AlertHandler.swift */; };
@@ -98,6 +100,8 @@
 		0A3AD358240B56980047CAA9 /* EventTimelineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTimelineCell.swift; sourceTree = "<group>"; };
 		0A3C8C8E240EB97300176FDA /* MyEventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventTableViewController.swift; sourceTree = "<group>"; };
 		0A3C8C90240EE83400176FDA /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		0A6BC6522410B4B40025DD66 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		0A6BC6542410B6660025DD66 /* SearchEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventViewController.swift; sourceTree = "<group>"; };
 		0A7393AF240F398700FB2003 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
 		0A7393B1240F3DD600FB2003 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		0A7393B3240F4C9B00FB2003 /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 				0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */,
 				0A0688CC240CD324000DD3C5 /* FindLocationViewController.swift */,
 				0A3C8C8E240EB97300176FDA /* MyEventTableViewController.swift */,
+				0A6BC6542410B6660025DD66 /* SearchEventViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 		0AE92DB723EED9BB0062E536 /* Supportings */ = {
 			isa = PBXGroup;
 			children = (
+				0A6BC6522410B4B40025DD66 /* TabBarViewController.swift */,
 			);
 			path = Supportings;
 			sourceTree = "<group>";
@@ -622,6 +628,7 @@
 				0AE92D8823EED3420062E536 /* ViewController.swift in Sources */,
 				0AE8AF99240BD0D50066D233 /* CreateEventViewController.swift in Sources */,
 				0AC6E12C240E5E7000CEE24E /* UserDefaults.swift in Sources */,
+				0A6BC6552410B6660025DD66 /* SearchEventViewController.swift in Sources */,
 				0A106B5D24088CC00032EFC5 /* Constants.swift in Sources */,
 				0AE8AF9F240C03DF0066D233 /* EditMyProfileViewController.swift in Sources */,
 				0AE8AFA1240C0A600066D233 /* ForgotPasswordViewController.swift in Sources */,
@@ -632,6 +639,7 @@
 				0A7393B2240F3DD600FB2003 /* TransitionManager.swift in Sources */,
 				0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */,
 				0A3C8C91240EE83400176FDA /* SignUp.swift in Sources */,
+				0A6BC6532410B4B40025DD66 /* TabBarViewController.swift in Sources */,
 				0A7393B4240F4C9B00FB2003 /* AlertHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

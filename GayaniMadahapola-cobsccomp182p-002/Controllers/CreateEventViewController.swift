@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import MobileCoreServices
 
-class CreateEventViewController: UIViewController {
+class CreateEventViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate{
 
     @IBOutlet weak var eventNamelbl: UILabel!
     @IBOutlet weak var eventNameTf: UITextField!
@@ -47,9 +47,7 @@ class CreateEventViewController: UIViewController {
         datePickerView.datePickerMode = UIDatePicker.Mode.date
         dateTf.inputView = datePickerView
         //datePickerView.addTarget(self, action: //#selector(CreateEventViewController.datePickerValueChanged), for: UIControl.Event.valueChanged)
-        
     }
-    
     
     override func didReceiveMemoryWarning()
     {
@@ -57,11 +55,32 @@ class CreateEventViewController: UIViewController {
         
     }
     
+    //Add event photos
     @IBAction func addPhotosTapped(_ sender: Any) {
         
-       
+        let eventImage = UIImagePickerController()
+        eventImage.delegate = self
+        
+        eventImage.sourceType = UIImagePickerController.SourceType.photoLibrary
+        eventImage.allowsEditing = false
+        
+        self.present(eventImage, animated: true){
+            //After it is  complete
+        }
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+    {
+        // The info dictionary may contain multiple representations of the image. You want to use the original.
+        guard let selectedImage = info[.originalImage] as? UIImage else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        // Set photoImageView to display the selected image.
+        self.addPhotoImage.image = selectedImage
+        // Dismiss the picker.
+        picker.dismiss(animated: true, completion: nil)
         
     }
+        
     @IBAction func discardBtnTapped(_ sender: Any) {
         
         
