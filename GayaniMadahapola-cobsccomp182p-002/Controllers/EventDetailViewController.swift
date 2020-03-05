@@ -42,6 +42,8 @@ class EventDetailViewController: UIViewController {
         Utilities.styleHollowButton(postButton)
     }
     @IBAction func goingBtnTapped(_ sender: Any) {
+        
+        
     }
     
     @IBAction func postBtnTapped(_ sender: Any) {

@@ -40,6 +40,8 @@
 	</array>
 	<key>NSFaceIDUsageDescription</key>
 	<string>This is login</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Image is safe with me.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
