@@ -33,3 +33,4 @@ init(myProfile : MyProfileViewController) {
 //    self.imageData = myProfile.myImage
     }
 }
+
