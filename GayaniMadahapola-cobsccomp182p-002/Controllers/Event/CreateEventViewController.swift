@@ -38,6 +38,7 @@ class CreateEventViewController: UIViewController ,UINavigationControllerDelegat
     }
 
     @IBAction func findLocationBtnTapped(_ sender: Any) {
+        self.transition(identifier: "EditEventToFindLocation")
         
     }
     @IBAction func datePicker(_ sender: Any) {
@@ -82,11 +83,10 @@ class CreateEventViewController: UIViewController ,UINavigationControllerDelegat
     }
         
     @IBAction func discardBtnTapped(_ sender: Any) {
-        
-        
+        self.transition(identifier: "EditEventToHome")
     }
+    
     @IBAction func createEventBtnTapped(_ sender: Any) {
-        
         self.transition(identifier: "homeToCreateEvent")
         
         let event = Event(ename: eventNameTf.text!, eI: "", eLocation: locationTf.text!, eventDate: "2019-01-30", eDesc: "1234")

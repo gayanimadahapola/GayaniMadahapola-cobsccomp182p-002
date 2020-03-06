@@ -114,6 +114,7 @@ class SignUpViewController: UIViewController {
         errorLabel.text = message
         errorLabel.alpha = 1
     }
+    
     func transitionToHome() {
         let eventHomeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.EventHomeViewController) as? EventHomeViewController
         

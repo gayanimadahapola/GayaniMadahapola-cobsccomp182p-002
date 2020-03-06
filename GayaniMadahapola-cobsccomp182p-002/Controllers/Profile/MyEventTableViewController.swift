@@ -10,6 +10,29 @@ import UIKit
 
 class MyEventTableViewController: UITableViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var publisherName: UILabel!
+    @IBOutlet weak var eventImageView: UIImageView!
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var location: UIButton!
+    @IBOutlet weak var like: UIButton!
+    @IBOutlet weak var comment: UIButton!
+    @IBOutlet weak var share: UIButton!
+    
+    @IBAction func likeBtn(_ sender: Any) {
+        
+    }
+    @IBAction func commentBtn(_ sender: Any){
+        
+    }
+    @IBAction func shareBtn(_ sender: Any) {
+    }
+    
+    @IBAction func goingBtnTapped(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

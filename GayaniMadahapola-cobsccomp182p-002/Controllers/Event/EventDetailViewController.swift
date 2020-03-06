@@ -47,6 +47,13 @@ class EventDetailViewController: UIViewController {
     }
     
     @IBAction func postBtnTapped(_ sender: Any) {
+        
+    }
+    
+    private func transition(identifier: String) {
+        DispatchQueue.main.async {
+            TransitionManager.sharedInstance.transitionSegue(sender: self, identifier: identifier)
+        }
     }
     
 

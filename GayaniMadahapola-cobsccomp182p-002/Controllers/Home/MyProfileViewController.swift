@@ -44,5 +44,11 @@ class MyProfileViewController: UIViewController {
         self.makeLogOutAlert()
         
     }
+    
+    private func transition(identifier: String) {
+        DispatchQueue.main.async {
+            TransitionManager.sharedInstance.transitionSegue(sender: self, identifier: identifier)
+        }
+    }
 }
 

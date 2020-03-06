@@ -33,6 +33,7 @@
 		0A7393B2240F3DD600FB2003 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393B1240F3DD600FB2003 /* TransitionManager.swift */; };
 		0A7393B4240F4C9B00FB2003 /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393B3240F4C9B00FB2003 /* AlertHandler.swift */; };
 		0A7393B6240F518D00FB2003 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393B5240F518D00FB2003 /* Extensions.swift */; };
+		0AAD071924120EEA002C41A5 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD071824120EEA002C41A5 /* AuthManager.swift */; };
 		0AC1F3BC24061B1C00FC2C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */; };
 		0AC6E12C240E5E7000CEE24E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6E12B240E5E7000CEE24E /* UserDefaults.swift */; };
 		0AD2A7162406BC4F000D3A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD2A7152406BC4F000D3A92 /* Main.storyboard */; };
@@ -108,6 +109,7 @@
 		0A7393B3240F4C9B00FB2003 /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
 		0A7393B5240F518D00FB2003 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AAD071824120EEA002C41A5 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		0AC6E12B240E5E7000CEE24E /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		0AD2A7152406BC4F000D3A92 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0AD2A7172406BD11000D3A92 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -200,6 +202,59 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0AAD071724120E8E002C41A5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0A7393B1240F3DD600FB2003 /* TransitionManager.swift */,
+				0AAD071824120EEA002C41A5 /* AuthManager.swift */,
+				0AE8AFA2240C17720066D233 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0AAD071A241214E8002C41A5 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				0A3AD34D240A85F70047CAA9 /* EventHomeViewController.swift */,
+				0A3AD356240B4E1C0047CAA9 /* EventDetailViewController.swift */,
+				0A3AD358240B56980047CAA9 /* EventTimelineCell.swift */,
+				0AE8AF98240BD0D50066D233 /* CreateEventViewController.swift */,
+				0A0688CC240CD324000DD3C5 /* FindLocationViewController.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		0AAD071B241214F3002C41A5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A6BC6542410B6660025DD66 /* SearchEventViewController.swift */,
+				0AE84B3823FE3D47006525E0 /* HomeViewController.swift */,
+				0AE8AF9C240C00B80066D233 /* MyProfileViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0AAD071C241215CE002C41A5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */,
+				0AE8AF9A240BD0F20066D233 /* PublisherProfileViewController.swift */,
+				0A3C8C8E240EB97300176FDA /* MyEventTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0AAD071D241215EA002C41A5 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0AE92D8723EED3420062E536 /* ViewController.swift */,
+				0AE84B3423FE3D1A006525E0 /* LoginViewController.swift */,
+				0AE84B3623FE3D29006525E0 /* SignUpViewController.swift */,
+				0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		0AD8C1FF240D47760092C61B /* NetworkClients */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +297,7 @@
 				0AEF807B23EF20D500FA4528 /* Views */,
 				0AE92DB323EED8C70062E536 /* Controllers */,
 				0AE92DB423EED8ED0062E536 /* Helpers */,
+				0AAD071724120E8E002C41A5 /* Managers */,
 				0AE92DB523EED9350062E536 /* Network */,
 				0AE92DB623EED96B0062E536 /* Resources */,
 				0A3AD321240A46E80047CAA9 /* Screens */,
@@ -279,21 +335,10 @@
 		0AE92DB323EED8C70062E536 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0AE92D8723EED3420062E536 /* ViewController.swift */,
-				0AE84B3423FE3D1A006525E0 /* LoginViewController.swift */,
-				0AE84B3623FE3D29006525E0 /* SignUpViewController.swift */,
-				0AE84B3823FE3D47006525E0 /* HomeViewController.swift */,
-				0A3AD34D240A85F70047CAA9 /* EventHomeViewController.swift */,
-				0A3AD356240B4E1C0047CAA9 /* EventDetailViewController.swift */,
-				0A3AD358240B56980047CAA9 /* EventTimelineCell.swift */,
-				0AE8AF98240BD0D50066D233 /* CreateEventViewController.swift */,
-				0AE8AF9A240BD0F20066D233 /* PublisherProfileViewController.swift */,
-				0AE8AF9C240C00B80066D233 /* MyProfileViewController.swift */,
-				0AE8AF9E240C03DF0066D233 /* EditMyProfileViewController.swift */,
-				0AE8AFA0240C0A600066D233 /* ForgotPasswordViewController.swift */,
-				0A0688CC240CD324000DD3C5 /* FindLocationViewController.swift */,
-				0A3C8C8E240EB97300176FDA /* MyEventTableViewController.swift */,
-				0A6BC6542410B6660025DD66 /* SearchEventViewController.swift */,
+				0AAD071D241215EA002C41A5 /* Auth */,
+				0AAD071B241214F3002C41A5 /* Home */,
+				0AAD071A241214E8002C41A5 /* Event */,
+				0AAD071C241215CE002C41A5 /* Profile */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -304,7 +349,6 @@
 				0A106B5A24087F720032EFC5 /* Utilities.swift */,
 				0A106B5C24088CBF0032EFC5 /* Constants.swift */,
 				0AC6E12B240E5E7000CEE24E /* UserDefaults.swift */,
-				0A7393B1240F3DD600FB2003 /* TransitionManager.swift */,
 				0A7393B3240F4C9B00FB2003 /* AlertHandler.swift */,
 				0A7393B5240F518D00FB2003 /* Extensions.swift */,
 			);
@@ -314,7 +358,6 @@
 		0AE92DB523EED9350062E536 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				0AE8AFA2240C17720066D233 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -639,6 +682,7 @@
 				0AD8C203240D48410092C61B /* EventDataServiceClient.swift in Sources */,
 				0AE8AF9B240BD0F20066D233 /* PublisherProfileViewController.swift in Sources */,
 				0AE84B3723FE3D29006525E0 /* SignUpViewController.swift in Sources */,
+				0AAD071924120EEA002C41A5 /* AuthManager.swift in Sources */,
 				0A0688CD240CD324000DD3C5 /* FindLocationViewController.swift in Sources */,
 				0A7393B2240F3DD600FB2003 /* TransitionManager.swift in Sources */,
 				0AE92D8623EED3420062E536 /* AppDelegate.swift in Sources */,
