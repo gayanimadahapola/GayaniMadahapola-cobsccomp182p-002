@@ -27,6 +27,13 @@ class ViewController: UIViewController {
         Utilities.styleHollowButton(loginButton)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     // Touch ID & Face ID integration is here - when you touch the nibm event logo
     @IBAction func TouchIDButton(_ sender: Any) {
         
