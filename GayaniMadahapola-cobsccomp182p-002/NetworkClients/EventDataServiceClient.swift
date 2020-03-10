@@ -28,15 +28,15 @@ class EventDataServiceClient{
     
     static func saveEvent(event: Event){
         Fbc.shared.collection("Events").addDocument(data: [
-            "e_name":event.eventName,
-            "e_desc":event.eventDesc,
-            "e_date":event.eventDateTime,
-            "e_location":event.eventLocation,
-            "e_image": event.eventImage
+            "ename":event.eventName,
+            "eImage":event.eventImage,
+            "eDate":event.eventDate,
+            "eLocation":event.eventLocation,
+            "eDesc":event.eventDesc,
+            "publisherName": event.publisherName,
+            "publisherImage":event.publisherImage,
             ]).addSnapshotListener { (DocumentSnapshot
                 , Error) in
-                
-            
         }
     }
 }

@@ -11,6 +11,8 @@ target 'GayaniMadahapola-cobsccomp182p-002' do
   pod 'Firebase'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Storage'
+  pod 'RxSwift'
 
   target 'GayaniMadahapola-cobsccomp182p-002Tests' do
     inherit! :search_paths

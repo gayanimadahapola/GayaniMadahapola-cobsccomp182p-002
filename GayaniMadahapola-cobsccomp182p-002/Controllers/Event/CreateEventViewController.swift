@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import MobileCoreServices
+import RxSwift
 
 class CreateEventViewController: UIViewController ,UINavigationControllerDelegate, UIImagePickerControllerDelegate{
 
@@ -89,10 +90,11 @@ class CreateEventViewController: UIViewController ,UINavigationControllerDelegat
     @IBAction func createEventBtnTapped(_ sender: Any) {
         self.transition(identifier: "homeToCreateEvent")
         
-        let event = Event(ename: eventNameTf.text!, eI: "", eLocation: locationTf.text!, eventDate: "2019-01-30", eDesc: "1234")
-
+        let event = Event(ename: eventNameTf.text!, eImage: "", eLocation: locationTf.text!, eDate: "2019-01-30", eDesc: "1234", publisherName: "Gayani Madahapola", publisherImage: "")
+      
         EventDataServiceClient.saveEvent(event: event)
     }
+    
     func showDatePicker(){
         //Formate Date
         //datePicker.datePickerMode = .date

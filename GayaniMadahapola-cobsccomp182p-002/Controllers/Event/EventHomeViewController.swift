@@ -42,6 +42,7 @@ class EventHomeViewController: UIViewController , UITableViewDelegate, UITableVi
         db.collection("Event").addDocument(data: ["eventName": "Walk To Sustain", "date": "29th February 2020 Sat 2.30 PM", "location": "NIBM, Colombo 09"])
         
         // following line to display an Edit button in the navigation bar for this view controller.
+        
         self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
         // Do any additional setup after loading the view.

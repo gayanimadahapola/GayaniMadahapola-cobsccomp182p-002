@@ -18,19 +18,18 @@ class Profile {
     //var myImage = String?
     //var imageData = UIImage?
     
-    init(mname : String, memail : String ,mcontactNo:String ,mFB:String ,mImage: String) {
-        self.myName = mname
-        self.myEmail = memail
-        self.myContactNo = mcontactNo
-        self.myFBURL = mFB
-        //self.myImage = mImage
+init?(myProfile : [String: Any]) {
+    guard let myName = myProfile["mname"] as? String,
+    let myEmail = myProfile["memail"] as? String,
+    let myContactNo = myProfile["mcontactNo"] as? String,
+    let myFBURL = myProfile["mFB"] as? String
+    else {
+        return nil
     }
+    self.myName = myName
+    self.myEmail = myEmail
+    self.myContactNo = myContactNo
+    self.myFBURL = myFBURL
     
-init(myProfile : MyProfileViewController) {
-    //self.myName = myProfile.userNameLabel
-    //self.myEmail = myProfile.emailLabel
-//    self.myContactNo = myProfile.contactNoLabel
-//    self.imageData = myProfile.myImage
     }
 }
-

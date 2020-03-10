@@ -33,6 +33,7 @@
 		0A7393B2240F3DD600FB2003 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393B1240F3DD600FB2003 /* TransitionManager.swift */; };
 		0A7393B4240F4C9B00FB2003 /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393B3240F4C9B00FB2003 /* AlertHandler.swift */; };
 		0A7393B6240F518D00FB2003 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7393B5240F518D00FB2003 /* Extensions.swift */; };
+		0AACC7602415E40B005AC7F6 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACC75F2415E40B005AC7F6 /* DBManager.swift */; };
 		0AAD071924120EEA002C41A5 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD071824120EEA002C41A5 /* AuthManager.swift */; };
 		0AC1F3BC24061B1C00FC2C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */; };
 		0AC6E12C240E5E7000CEE24E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6E12B240E5E7000CEE24E /* UserDefaults.swift */; };
@@ -109,6 +110,7 @@
 		0A7393B3240F4C9B00FB2003 /* AlertHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
 		0A7393B5240F518D00FB2003 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0A9BF17E2402F74B000B8FD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AACC75F2415E40B005AC7F6 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		0AAD071824120EEA002C41A5 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		0AC6E12B240E5E7000CEE24E /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		0AD2A7152406BC4F000D3A92 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				0A7393B1240F3DD600FB2003 /* TransitionManager.swift */,
 				0AAD071824120EEA002C41A5 /* AuthManager.swift */,
 				0AE8AFA2240C17720066D233 /* NetworkManager.swift */,
+				0AACC75F2415E40B005AC7F6 /* DBManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -667,6 +670,7 @@
 				0A7393B6240F518D00FB2003 /* Extensions.swift in Sources */,
 				0AD8C201240D478F0092C61B /* FirebaseClient.swift in Sources */,
 				0A3AD359240B56980047CAA9 /* EventTimelineCell.swift in Sources */,
+				0AACC7602415E40B005AC7F6 /* DBManager.swift in Sources */,
 				0A3AD357240B4E1C0047CAA9 /* EventDetailViewController.swift in Sources */,
 				0AE84B3523FE3D1A006525E0 /* LoginViewController.swift in Sources */,
 				0AD8C207240D53AB0092C61B /* Profile.swift in Sources */,
